@@ -1,0 +1,44 @@
+	outlineColor: 000000
+	flying: true
+	shadowElevation: 0.1
+	controller: BuilderAI
+	payloadCapacity: 2
+	pickupUnits: false
+	fogRadius: 0.25
+	drag: 0.07
+	speed: 5.5
+	isEnemy: false
+	lowAltitude: true
+	mineWalls: false
+	mineFloor: true
+	mineSpeed: 8.5
+	mineTier: 3
+	buildSpeed: 3
+	accel: 0.15
+	rotateSpeed: 20
+	itemCapacity: 150
+	health: 750
+	armor: 8
+	hitSize: 10
+	engines: [
+		{
+			x: 6.0
+			y: -11.25
+			rotation: 270
+			radius: 4
+		}
+		{
+			x: -6.0
+			y: -11.25
+			rotation: 270
+			radius: 4
+		}
+		{
+			x: 0
+			y: -11.5
+			rotation: 270
+			radius: 5
+		}
+	]
+	weapons: [
+	]

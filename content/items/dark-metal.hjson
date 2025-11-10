@@ -1,0 +1,8 @@
+ color: 5c0d0d
+ explosiveness: 0f
+ flammability: 0f
+ radioactivity: 0f
+ hardness: 4
+ charge: 0
+ cost: 4
+ alwaysUnlocked: false

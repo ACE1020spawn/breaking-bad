@@ -1,0 +1,72 @@
+	type: GenericCrafter
+	drawer: {
+		type: DrawMulti
+		drawers: [
+			{
+				type: DrawDefault
+			}
+    {
+		type: DrawCrucibleFlame
+		particleRad: 12
+		flameRad: 4
+		partcileSize: 1
+		rotateScl: 0.2
+		particles: 90
+		particleLife: 25
+	  }
+{
+    type: DrawFlame
+	suffix: -top
+    flameRadius: 3.5         
+    flameRadiusIn: 1.5
+    flameRadiusScl: 3 
+    flameRadiusMag: 1
+    flameRadiusInMag: 0.7 
+	flameColor: ff2e2ec7
+   }
+			{
+				type: DrawRegion
+				suffix: -top
+			}
+			  {
+		type: DrawHeatInput
+		suffix: -heat
+		} 
+		]
+		}
+	size: 2
+	hasPower: true
+	hasItems: true
+	hasLiquids: true
+	itemCapacity: 30
+	craftTime: 120
+	updateEffect: none
+	craftEffect: blastExplosion
+	consumes: {
+		items: [
+			titanium/4
+			thorium/3
+		]
+		liquids: [slag/0.20]
+		power: 2.5
+	}
+	requirements: [
+		silicon/150
+		thorium/50
+		lead/30
+		titanium/30
+	]
+	research: {
+		parent: plastanium-compressor
+		planet: serpulo
+		requirements: [  
+			silicon/1250
+		thorium/750
+		lead/630
+		titanium/630
+		]  
+		objectives: [
+		]
+	}
+	category: crafting
+	outputItem: dark-metal/1

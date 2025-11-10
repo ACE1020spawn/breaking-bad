@@ -5,7 +5,7 @@
  absorbLasers: true
  itemCapacity: 19000  
 alwaysUnlocked: false
- unitType: gamma
+ unitType: randommod-metadon
  incinerateNonBuildable: false       
  isFirstTier: false
   research: {
@@ -18,7 +18,7 @@ alwaysUnlocked: false
 	 lead/17000
 	 silicon/12500
 	 thorium/10500
-	 //dark-metal/8500
+	 dark-metal/8500
     ]  
   }
 requirements: [  
@@ -26,5 +26,6 @@ requirements: [
 	 lead/10000
 	 silicon/7500
 	 thorium/6500
-	 //dark-metal/3500
+	 dark-metal/3500
     ]  
+	category: effect
