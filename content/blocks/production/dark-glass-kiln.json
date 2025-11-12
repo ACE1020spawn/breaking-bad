@@ -31,7 +31,8 @@ consumes: {
   ]
   items: [
     dark-metal/3
-    metaglass/9
+    sand/9
+	graphite/1
   ]
 }
 craftTime: 360
