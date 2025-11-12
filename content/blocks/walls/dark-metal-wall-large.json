@@ -1,0 +1,20 @@
+type: Wall
+size: 2
+armor: 4
+health: 4400
+squareSprite: true
+category: defense
+
+
+requirements: [
+  dark-metal/24
+]
+
+
+research: {
+  parent: dark-metal-wall
+  planet: serpulo
+}
+researchCost: [
+  dark-metal/240
+] 
