@@ -51,7 +51,7 @@ drawer: {
       padding: 3
     }
 		{
-      type: drawCrucibleFlame
+      type: DrawArcSmelt
     }
 		{
       type: DrawDefault
