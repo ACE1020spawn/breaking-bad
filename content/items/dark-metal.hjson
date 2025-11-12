@@ -6,3 +6,9 @@
  charge: 0
  cost: 4
  alwaysUnlocked: false
+
+
+research: {
+  parent: thorium
+  planet: serpulo
+}
