@@ -1,0 +1,72 @@
+type: GenericCrafter
+hasItems: true
+hasPower: true
+hasLiquids: true
+
+
+requirements: [
+  copper/400
+  lead/400
+  silicon/300
+  dark-metal/200
+]
+
+
+category: production
+size: 3
+squareSprite: true
+ambientSound: smelter
+ambientSoundVolume:  0.08
+
+
+outputItems: [
+  dark-glass/3
+]
+
+
+consumes: {
+  power: 4
+  liquids: [
+    cryofluid/0.2
+  ]
+  items: [
+    dark-metal/3
+    metaglass/9
+  ]
+}
+craftTime: 360
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+			drawLiquid: cryofluid
+			alpha: 0.7
+      padding: 3
+    }
+		{
+      type: drawCrucibleFlame
+    }
+		{
+      type: DrawDefault
+    }
+	]
+}
+
+
+research: {
+  parent: dark-metal-oven
+	planet: serpulo
+}
+researchCost: [
+  copper/1200
+  lead/1200
+  silicon/900
+  dark-metal/600
+]
