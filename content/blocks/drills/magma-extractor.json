@@ -3,6 +3,7 @@ attribute: heat
 baseEfficiency: 0
 minEfficiency: 4
 maxBoost: 8
+displayEfficiencyScale: 0.25
 
 
 
