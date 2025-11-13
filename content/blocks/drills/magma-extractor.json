@@ -19,7 +19,7 @@ squareSprite: false
 
 
 consumes: {
-    power: 0.75
+    power: 3
 
 }
 
