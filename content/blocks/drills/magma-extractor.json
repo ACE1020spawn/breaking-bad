@@ -2,7 +2,7 @@ type: AttributeCrafter
 attribute: heat
 baseEfficiency: 0
 minEfficiency: 4
-maxBoost: 8
+maxBoost: 12
 displayEfficiencyScale: 0.25
 buildTime: 360
 
@@ -27,7 +27,7 @@ consumes: {
 
 
 
-outputLiquid: slag/0.2
+outputLiquid: slag/0.05
 
 
 
