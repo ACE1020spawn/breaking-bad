@@ -1,0 +1,92 @@
+type: AttributeCrafter
+attribute: heat
+baseEfficiency: 0
+minEfficiency: 2
+
+
+
+displayEfficiency: true
+hasItems: false
+hasLiquids: true
+hasPower: true
+ignoreLiquidFullness: false
+size: 4
+liquidCapacity: 100
+squareSprite: false
+
+
+consumes: {
+    power: 0.75
+
+}
+
+
+
+
+
+outputLiquid: slag/0.2
+
+
+
+category: production
+ambientSound: hum
+ambientSoundVolume: 0.06
+
+
+
+
+requirements: [
+	graphite/300
+  plastanium/200
+  silicon/200
+  dark-metal/100
+  dark-glass/50
+]
+
+
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: slag
+      alpha: 0.7
+      padding: 3
+    }
+
+    {
+      type: DrawDefault
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+research: {
+  parent: water-extractor
+  planet: serpulo
+  objectives: [ 
+    dark-glass
+  ]
+}
+
+
+
+researchCost: [
+  graphite/700
+  plastanium/400
+  silicon/800
+  dark-metal/400
+  dark-glass/400
+]
