@@ -13,7 +13,8 @@ requirements: [
 buildTime: 300
 
 
-category: production
+category: crafting
+craftEffect: smeltsmoke
 size: 3
 squareSprite: false
 ambientSound: smelter
