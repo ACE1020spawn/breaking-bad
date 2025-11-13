@@ -1,9 +1,8 @@
 type: AttributeCrafter
 attribute: heat
 baseEfficiency: 0
-minEfficiency: 4
+minEfficiency: 0.1
 maxBoost: 12
-displayEfficiencyScale: 0.25
 buildTime: 360
 
 
