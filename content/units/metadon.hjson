@@ -22,7 +22,7 @@
 	armor: 8
 	hitSize: 10
     waveTrailY: -2
-    trailColor: BF4C86FF
+    trailColor: 5c0d0d
     trailLength: 8 
 	engines: [
 		{
