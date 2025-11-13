@@ -10,11 +10,12 @@ requirements: [
   silicon/300
   dark-metal/200
 ]
+buildTime: 300
 
 
 category: production
 size: 3
-squareSprite: true
+squareSprite: false
 ambientSound: smelter
 ambientSoundVolume:  0.08
 
@@ -27,15 +28,15 @@ outputItems: [
 consumes: {
   power: 4
   liquids: [
-    cryofluid/0.2
+    oil/0.2
   ]
   items: [
-    dark-metal/3
-    sand/9
-	graphite/1
+    dark-metal/1
+    sand/8
+	graphite/2
   ]
 }
-craftTime: 360
+craftTime: 120
 
 
 drawer: {
@@ -47,12 +48,12 @@ drawer: {
     }
     {
       type: DrawLiquidTile
-			drawLiquid: cryofluid
+			drawLiquid: oil
 			alpha: 0.7
       padding: 3
     }
 		{
-      type: DrawArcSmelt
+      type: DrawCrucibleFlame
     }
 		{
       type: DrawDefault
