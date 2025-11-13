@@ -4,7 +4,7 @@ armor: 4
 health: 875
 squareSprite: true
 category: defense
-buildTime: 25
+buildTime: 15
 
 
 requirements: [
