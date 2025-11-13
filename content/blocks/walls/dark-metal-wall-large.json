@@ -1,7 +1,7 @@
 type: Wall
 size: 2
 armor: 4
-health: 3800
+health: 3500
 squareSprite: true
 category: defense
 
