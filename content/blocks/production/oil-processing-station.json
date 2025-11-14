@@ -1,0 +1,77 @@
+type: GenericCrafter 
+category: crafting
+size: 3
+
+
+hasLiquids: true
+hasItems: true
+squareSprite: false
+
+
+liquidCapacity: 100
+itemCapacity: 20
+
+
+outputLiquids: [
+    nitrogen/0.4
+]
+outputItems: [
+    graphite/6
+]
+
+
+consumes: {
+	liquids: [
+        slag/0.4
+        oil/0.8
+    ]
+  power: 4
+}
+craftTime: 120
+
+
+ambientSound: electricHum
+ambientSoundVolume: 0.08
+
+
+requirements: [
+  silicon/650
+  titanium/370
+  plastanium/340
+  dark-glass/160
+]
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+	{
+	  type: DrawRegion
+	  suffix: -bottom
+	} 
+	{
+	  type: DrawLiquidTile
+	  drawLiquid: oil
+	  padding: 3
+	  alpha: 0.8
+    } 
+    {
+	  type: DrawCrucibleFlame
+	}
+    {
+	  type: DrawDefault
+	}
+  ] 
+} 
+  
+
+research: {
+  parent: coal-centrifuge
+  planet: serpulo
+}
+researchCost: [
+  silicon/1800
+  titanium/1600
+  plastanium/200
+  dark-glass/800
+]
