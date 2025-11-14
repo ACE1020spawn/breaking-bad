@@ -1,0 +1,78 @@
+type: GenericCrafter 
+category: crafting
+size: 4
+buildTime: 600
+
+
+hasLiquids: true
+hasItems: true
+hasPower: true
+squareSprite: false
+
+
+liquidCapacity: 150
+itemCapacity: 40
+
+
+outputItems: [
+    plastanium/12
+]
+
+
+consumes: {
+	liquids: [
+        nitrogen/0.6
+        oil/0.8
+    ]
+  power: 10
+}
+craftTime: 240
+
+
+ambientSound: electricHum
+ambientSoundVolume: 0.08
+
+
+requirements: [
+  lead/800
+  graphite/600
+  plastanium/340
+  dark-metal/640
+  thorium/720
+]
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+	{
+	  type: DrawRegion
+	  suffix: -bottom
+	} 
+	{
+	  type: DrawLiquidTile
+	  drawLiquid: nitrogen
+	  padding: 3
+	  alpha: 0.8
+    } 
+    {
+	  type: DrawCrucibleFlame
+	}
+    {
+	  type: DrawDefault
+	}
+  ] 
+} 
+  
+
+research: {
+  parent: plastanium-compressor
+  planet: serpulo
+}
+researchCost: [
+  lead/4400
+  graphite/3600
+  plastanium/750
+  thorium/1750
+  dark-metal/2200
+] 
