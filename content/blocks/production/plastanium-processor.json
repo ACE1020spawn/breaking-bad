@@ -31,7 +31,7 @@ consumes: {
 craftTime: 240
 
 
-ambientSound: electricHum
+ambientSound: machine
 ambientSoundVolume: 0.08
 
 
