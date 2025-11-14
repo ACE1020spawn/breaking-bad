@@ -23,6 +23,8 @@ consumes: {
 	liquids: [
         nitrogen/0.6
         oil/0.8
+		titanium/8
+		dark-metal/2
     ]
   power: 10
 }
