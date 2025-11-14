@@ -29,15 +29,14 @@ outputItems: [
 consumes: {
   power: 4
   liquids: [
-    oil/0.2
+    water/0.2
   ]
   items: [
-    dark-metal/1
-    sand/8
-	graphite/2
+    dark-metal/4
+	metaglass/8
   ]
 }
-craftTime: 120
+craftTime: 240
 
 
 drawer: {
@@ -46,13 +45,7 @@ drawer: {
     {
       type: DrawRegion
       suffix: -bottom
-    }
-    {
-      type: DrawLiquidTile
-			drawLiquid: oil
-			alpha: 0.7
-      padding: 3
-    }
+	} 
 		{
       type: DrawCrucibleFlame
     }
