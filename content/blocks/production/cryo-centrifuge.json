@@ -32,7 +32,7 @@ consumes: {
 craftTime: 120
 
 
-ambientSound: machine
+ambientSound: smelter
 ambientSoundVolume: 0.08
 
 
