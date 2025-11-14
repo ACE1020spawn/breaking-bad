@@ -1,0 +1,82 @@
+type: GenericCrafter 
+category: crafting
+size: 3
+buildTime: 240
+
+
+hasLiquids: true
+hasItems: true
+hasPower: true
+squareSprite: false
+
+
+liquidCapacity: 150
+itemCapacity: 20
+
+
+outputLiquids: [
+    cryofluid/1
+]
+
+
+consumes: {
+	liquids: [
+        nitrogen/0.8
+        water/1
+  ] 
+  items: [
+		titanium/2
+    ]
+  power: 300
+}
+craftTime: 120
+
+
+ambientSound: machine
+ambientSoundVolume: 0.08
+
+
+requirements: [
+  copper/300
+  graphite/120
+  plastanium/100
+  dark-glass/200
+]
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+	{
+	  type: DrawRegion
+	  suffix: -bottom
+	} 
+	{
+	  type: DrawLiquidTile
+	  drawLiquid: water
+	  padding: 3
+	  alpha: 0.8
+    } 
+  {
+	  type: DrawLiquidTile
+	  drawLiquid: cryofluid
+	  padding: 3
+	  alpha: 0.8
+    } 
+    {
+	  type: DrawDefault
+	}
+  ] 
+} 
+  
+
+research: {
+  parent: cryofluid-mixer
+  planet: serpulo
+}
+researchCost: [
+  copper/1000
+  graphite/880
+  plastanium/450
+  dark-glass/650
+]  
