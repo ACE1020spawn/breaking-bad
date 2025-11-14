@@ -5,6 +5,7 @@ size: 3
 
 hasLiquids: true
 hasItems: true
+hasPower: true
 squareSprite: false
 
 
