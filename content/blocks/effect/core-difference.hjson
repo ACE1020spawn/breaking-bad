@@ -10,7 +10,7 @@ alwaysUnlocked: false
  isFirstTier: false
   research: {
     root: false
-	 parent: core-nuclear
+	 parent: core-nucleus
 	planet: serpulo
     requiresUnlock: false
 	requirements: [  
