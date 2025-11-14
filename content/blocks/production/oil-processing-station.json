@@ -40,6 +40,7 @@ requirements: [
   titanium/370
   plastanium/340
   dark-glass/160
+  dark-metal/400
 ]
 
 
@@ -75,4 +76,5 @@ researchCost: [
   titanium/1600
   plastanium/200
   dark-glass/800
+  dark-metal/1200
 ]
