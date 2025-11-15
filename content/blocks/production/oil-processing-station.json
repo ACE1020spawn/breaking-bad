@@ -1,6 +1,7 @@
 type: GenericCrafter 
 category: crafting
 size: 3
+buildTime: 360
 
 
 hasLiquids: true
