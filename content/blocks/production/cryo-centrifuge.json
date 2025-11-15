@@ -27,7 +27,7 @@ consumes: {
   items: [
 		titanium/2
     ]
-  power: 300
+  power: 5
 }
 craftTime: 120
 
