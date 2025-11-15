@@ -6,6 +6,12 @@
 		type: DrawRegion
 		suffix: -bottom
 	} 
+    {
+		type: DrawLiquidTile
+		drawLiquid: slag
+		alpha: 0.7
+		padding: 3
+	}
 	{
 		type: DrawCrucibleFlame
 		particleRad: 8
