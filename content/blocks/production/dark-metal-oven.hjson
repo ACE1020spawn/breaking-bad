@@ -3,6 +3,10 @@
 		type: DrawMulti
 		drawers: [
 	{
+		type: DrawRegion
+		suffix: -bottom
+	} 
+	{
 		type: DrawCrucibleFlame
 		particleRad: 8
 		flameRad: 4
