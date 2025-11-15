@@ -28,7 +28,7 @@ consumes: {
     ]
   power: 4
 }
-craftTime: 120
+craftTime: 180
 
 
 ambientSound: electricHum
