@@ -5,9 +5,9 @@
 	payloadCapacity: 2
 	pickupUnits: false
 	fogRadius: 0.25
-	drag: 0.05
-	speed: 5.5
-    rotateSpeed: 1.2
+	drag: 0.03
+	speed: 5
+    rotateSpeed: 0.5
 	isEnemy: false
 	lowAltitude: true
 	mineWalls: false
@@ -21,9 +21,6 @@
 	health: 750
 	armor: 8
 	hitSize: 10
-    waveTrailY: -2
-    trailColor: 5c0d0d
-    trailLength: 8 
 	engines: [
 		{
 			x: 6.0
