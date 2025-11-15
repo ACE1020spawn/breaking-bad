@@ -2,10 +2,7 @@
 	drawer: {
 		type: DrawMulti
 		drawers: [
-			{
-				type: DrawDefault
-			}
-    {
+	{
 		type: DrawCrucibleFlame
 		particleRad: 8
 		flameRad: 4
@@ -14,6 +11,9 @@
 		particles: 30
 		particleLife: 60
 	  }
+			{
+				type: DrawDefault
+			}
 			{
 				type: DrawRegion
 				suffix: -top
