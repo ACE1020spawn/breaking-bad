@@ -1,0 +1,13 @@
+consumes: {
+  items: [
+    copper/6
+    silicon/4
+    dark-metal/4
+  ]
+  liquids: [
+    hydrogen/0.1
+  ]
+  power: 8
+}
+craftTime: 600
+outputItem: surge-alloy/6
