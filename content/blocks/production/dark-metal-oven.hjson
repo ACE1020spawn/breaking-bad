@@ -7,23 +7,13 @@
 			}
     {
 		type: DrawCrucibleFlame
-		particleRad: 12
+		particleRad: 8
 		flameRad: 4
 		partcileSize: 1
 		rotateScl: 0.2
-		particles: 90
-		particleLife: 25
+		particles: 30
+		particleLife: 60
 	  }
-{
-    type: DrawFlame
-	suffix: -top
-    flameRadius: 3.5         
-    flameRadiusIn: 1.5
-    flameRadiusScl: 3 
-    flameRadiusMag: 1
-    flameRadiusInMag: 0.7 
-	flameColor: ff2e2ec7
-   }
 			{
 				type: DrawRegion
 				suffix: -top
