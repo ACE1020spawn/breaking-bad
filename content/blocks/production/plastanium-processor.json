@@ -22,7 +22,7 @@ outputItems: [
 consumes: {
 	liquids: [
         nitrogen/0.2
-        oil/0.8
+        oil/0.75
 	] 
 	items: [
 		titanium/8
