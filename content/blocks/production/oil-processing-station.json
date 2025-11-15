@@ -51,6 +51,9 @@ drawer: {
 	{
 	  type: DrawRegion
 	  suffix: -bottom
+	} 	  
+  {
+		type: DrawCrucibleFlame
 	} 
 	{
 	  type: DrawLiquidRegion
@@ -58,26 +61,23 @@ drawer: {
 	  suffix: -liquid1
 	  padding: 3
 	  alpha: 1
-    } 
+  } 
 	{
 	  type: DrawLiquidRegion
 	  drawLiquid: slag
 	  suffix: -liquid2
 	  padding: 3
 	  alpha: 0.8
-    } 
-    {
-			type: DrawCrucibleFlame
-		} 
-		{
-			type: DrawDefault
-		}
-		{
-			type: DrawGlowRegion
-			suffix: -top
-			glowScale: 2
-			color: F7E6FFFF
-		}
+  } 
+	{
+		type: DrawDefault
+	}
+	{
+		type: DrawGlowRegion
+		suffix: -glow
+		glowScale: 24
+		color: FFD37FFF
+	}
 	]
 } 
 	
