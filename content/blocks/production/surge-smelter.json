@@ -7,7 +7,6 @@ consumesLiquids: [
     nitrogen/0.1
 ]
 consumesPower: 8
-}
 craftTime: 600
 outputItem: surge-alloy/5
 liquidCapacity: 60
