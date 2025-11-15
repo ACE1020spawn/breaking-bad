@@ -21,7 +21,7 @@ outputLiquids: [
 
 consumes: {
 	liquids: [
-        nitrogen/0.8
+        nitrogen/0.3
         water/1
   ] 
   items: [
