@@ -20,12 +20,7 @@ all progress will be hidden until you have worked for 3 days, then you will have
 
 after 3 days, the GitHub account expires (i mean access to contribute)
 
-if you don't have time, then you can add days or change your order (for example, you were second, but you can't work the next 3 days, so you become 4th in the queue)
-
-### **it will also be good if you document your progress with a video or a screenshot in my or lehanchic`s dms, u can also voice act your part of the video that will be made of it**
-
-### From Lehanchic25:
-so i will create a video of it. how it was made
+if you don't have time, then you can add days or change your order (for example, you were second, but you can't work the next 3 days, so you become 4th in the queue
 
 # Participants
 ...
