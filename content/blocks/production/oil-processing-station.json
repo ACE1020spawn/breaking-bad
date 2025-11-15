@@ -35,7 +35,6 @@ craftTime: 180
 
 ambientSound: electricHum
 ambientSoundVolume: 0.08
-craftEffect: purlverizeMedium
 
 
 requirements: [
