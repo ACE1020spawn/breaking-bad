@@ -21,7 +21,7 @@ outputItems: [
 
 consumes: {
 	liquids: [
-        nitrogen/0.6
+        nitrogen/0.2
         oil/0.8
 	] 
 	items: [
