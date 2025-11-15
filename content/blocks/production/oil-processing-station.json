@@ -26,7 +26,7 @@ outputItems: [
 consumes: {
 	liquids: [
         slag/0.4
-        oil/0.8
+        oil/0.25
     ]
   power: 4
 }
