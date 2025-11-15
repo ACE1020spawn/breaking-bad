@@ -24,7 +24,7 @@ if you don't have time, then you can add days or change your order (for example,
 
 # Participants
 - MrDoes-Nobody
-- blehhhhhcat
+- Blehhhh cat
 
 # Previews
 ...
