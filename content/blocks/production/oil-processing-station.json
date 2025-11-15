@@ -75,7 +75,7 @@ drawer: {
 	{
 		type: DrawGlowRegion
 		suffix: -glow
-		glowScale: 24
+		glowScale: 10
 		color: FFD37FFF
 	}
 	]
