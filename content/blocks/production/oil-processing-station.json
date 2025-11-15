@@ -53,19 +53,34 @@ drawer: {
 	  suffix: -bottom
 	} 
 	{
-	  type: DrawLiquidTile
+	  type: DrawLiquidRegion
 	  drawLiquid: oil
+	  suffix: -liquid1
+	  padding: 3
+	  alpha: 1
+    } 
+	{
+	  type: DrawLiquidRegion
+	  drawLiquid: slag
+	  suffix: -liquid2
 	  padding: 3
 	  alpha: 0.8
     } 
     {
-	  type: DrawCrucibleFlame
-	}
-    {
-	  type: DrawDefault
-	}
-  ] 
+			type: DrawCrucibleFlame
+		} 
+		{
+			type: DrawDefault
+		}
+		{
+			type: DrawGlowRegion
+			suffix: -top
+			glowScale: 2
+			color: F7E6FFFF
+		}
+	]
 } 
+	
   
 
 research: {
