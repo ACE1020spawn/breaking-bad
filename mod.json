@@ -1,13 +1,12 @@
-{
- "displayName": "ds",
-"name": "randommod",
- "author": 	 "sd",
-"description": "sd",
- "version": "sd",
- "minGameVersion": "136",
- "subtitle": "sd"
- "dependencies": []
-}
+displayName: breaking bad
+name: randommod
+author: jesse
+description: cooking meth with walter.
+version: something
+minGameVersion: 136 
+subtitle: walter. lsts cook walter. 
+dependencies: []
+
 
 contentOrder: [
   #items
@@ -30,3 +29,4 @@ contentOrder: [
     #cores
       core-difference
 ] 
+
