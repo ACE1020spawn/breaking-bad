@@ -8,3 +8,25 @@
  "subtitle": "sd"
  "dependencies": []
 }
+
+contentOrder: [
+  #items
+    dark-metal
+    dark-glass
+  #units
+    metadon
+  #blocks
+    #drills
+      magma-extractor
+    #walls
+      dark-metal-wall
+      dark-metal-wall-large
+				#production
+						dark-metal-oven
+      dark-glass-kiln
+      oil-processing-station
+      cryo-centrifuge
+      plastanium-processor
+    #cores
+      core-difference
+] 
