@@ -1,14 +1,9 @@
-consumesItems: [
-    copper/25
-    silicon/20
-    dark-metal/10
+requirements: [
+    copper/240
+    silicon/440
+    thorium/270
+    phase-fabric/70
+    dark-metal/120
+    dark-glass/30
 ]
-consumesLiquids: [
-    nitrogen/0.1
-]
-consumesPower: 8
-craftTime: 600
-outputItem: surge-alloy/5
-liquidCapacity: 60
-itemCapacity: 50
-description: Fuses copper, silicon and titanium carbide into surge alloy under the influence of nitrogen. 
+buildTime: 720
