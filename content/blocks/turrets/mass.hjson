@@ -1,0 +1,56 @@
+  type: ItemTurret
+  outlineColor: 303030
+  name: mass
+  description: shoots at enemies with heavy projectiles that settle on the hull
+  health: 400
+  shootSound: shootBig2        // please add heavier shoot sound
+  buildCostMultiplier: 1.3
+  reload: 520
+  recoil: 0.5
+  range: 640
+  size: 3
+  innacuracy: 4
+  velocityRnd: 0.05
+  consumes: { 
+    coolant: { 
+       amount: 0.3
+    } 
+    power: 20
+  }
+  researchCostMultiplier: 0.6
+  inaccuracy: 0.2
+  targetAir: false
+  targetGround: true
+  ammoTypes: {
+    dark-glass: {
+    type: ArtilleryBulletType
+    pierce: false
+    frontColor: c4ccc2
+    backColor: a8b2a4
+    hitColor: c4ccc2
+    sprite: randommod-heavier-bullet
+    damage: 350       // please balance if its bad
+    splashDamageRadius: 20
+    splashDamage: 350
+    width: 12 
+    height: 12
+    lifetime: 40
+    speed: 6
+    hitSize: 10
+    ammoMultiplier: 15
+    trailWidth: 4
+    trailLength: 12
+    trailColor: c4ccc2
+    trailEffect: none
+    status: heavier
+    statusDuration: 680
+       }
+  }
+  requirements: [
+	  silicon/300
+	  titanium/200
+ 	  thorium/150
+	  dark-metal/80
+   ]
+  research:                    // add something
+  category: turret 
