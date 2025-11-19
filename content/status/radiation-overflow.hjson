@@ -1,0 +1,34 @@
+speedMultiplier : 0.80
+healthMultiplier : 0.80
+reloadMultiplier : 0.80
+damage: 5
+color : bd43a9
+name : radiation overflow
+effect : {
+ type: MultiEffect 
+            effects: [ 
+              { 
+                type: WaveEffect 
+                particles : 1
+                sides: 0 
+                sizeFrom: 0
+                sizeTo: 1
+                strokeFrom: 1 
+                strokeTo: 0 
+                lifetime: 10
+                colorFrom: b4c5af
+                colorTo: 808b7d
+              } 
+          {
+            particles : 2
+            colorFrom : dc4ec5
+            sizeFrom : 0
+            lifetime : 38
+            colorTo : 000000
+            sizeTo : 5
+            length : 60
+            type : ParticleEffect
+            cone : 360
+          }
+            ]
+} 
