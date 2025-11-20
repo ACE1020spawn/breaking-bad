@@ -3,7 +3,7 @@
   name: irradiator
   description: shoots bombs that emit radiation at enemies
   health: 600
-  shootSound: shootBig        
+  shootSound: Radiation-Shoot      
   buildCostMultiplier: 1.5
   reload: 360
   recoil: 0.5
@@ -138,4 +138,5 @@
   ]
   }
   research: mass
+
   category: turret 
