@@ -29,18 +29,18 @@
     frontColor: a24793
     backColor: 702d5a
     hitColor: a24793
-    sprite: 
+    sprite: randommod-gummy-bullet
     damage: 100       // please balance if its bad
     splashDamageRadius: 200
     splashDamage: 100
-    width: 20 
-    height: 20
+    width: 14
+    height: 22
     lifetime: 60
     speed: 4
     hitSize: 10
     ammoMultiplier: 10
-    trailWidth: 6
-    trailLength: 12
+    trailWidth: 3
+    trailLength: 20
     trailColor: c550b2
     trailEffect: none
     status: radiation-overflow
