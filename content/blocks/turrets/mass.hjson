@@ -3,7 +3,7 @@
   name: mass
   description: shoots at enemies with heavy projectiles that settle on the hull
   health: 400
-  shootSound: shootBig        // please add heavier shoot sound (already in files) cuz it doesnt work for some reasons
+  shootSound: Heavier-Shoot
   buildCostMultiplier: 1.3
   reload: 520
   recoil: 0.5
@@ -76,4 +76,5 @@
 	  dark-metal/80
    ]
   research:                    // add something
+
   category: turret 
