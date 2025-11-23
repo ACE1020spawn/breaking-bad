@@ -1,11 +1,6 @@
 # Experemental-mod
 A Mindustry mod where players take turns adding their own piece to the mod and then passing it on to others without any communication.
 
-# Notes
-The participants can edit all the files (and also this file), so if you want add the pictures here (for pictures you can dm me. i will add your picture in https://github.com/Lehanchic25/Pictures ([the same concept as 3Snake3 (creator of Sapphirium mod)](https://github.com/3Snake3/Sapphirium/))) or whatever you want. 
-
-If you're confused by what I wrote above, please dm me. I'll explain it to you in more detail.
-
 [Another idea (for the last participant) - make a number of included content]
 
 ## All information for the participants (copied from [discord](https://discord.gg/yWmPW9XRGe)): 
