@@ -1,10 +1,9 @@
 # Experemental-mod
 A Mindustry mod where players take turns adding their own piece to the mod and then passing it on to others without any communication.
+(ps. thanks to MrDoes-Nobody for finding participants)
 
 [Another idea (for the last participant) - make a number of included content]
 
-## All information for the participants (copied from [discord](https://discord.gg/yWmPW9XRGe)): 
-### From ace1020spawn:
 everything works so that the person who will start is chosen, he has 3 days to do something. when these 3 days end, the project is transferred to another person for 3 days. this is repeated until the participants run out. The order is random
 
 everything will work on github with copies of commits made by all participants
