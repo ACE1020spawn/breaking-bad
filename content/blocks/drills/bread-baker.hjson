@@ -1,0 +1,16 @@
+  name: Drill
+  description: bbbb
+  type: Drill
+  hasLiquids: false
+  size: 2
+  itemCapacity: 10
+  tier: 1
+  drillTime: 2400
+  drawMineItem: false
+  rotateSpeed: 3
+  category: production
+
+ requirements: [
+  bread/10
+]
+
