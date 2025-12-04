@@ -1,0 +1,11 @@
+  type: ItemBridge
+  name: Bread bridge
+  description: bbb
+  health: 75
+  range: 4
+  transportTime: 4
+  hasPower: false
+  category: distribution
+requirements: [
+  bread/10
+] 

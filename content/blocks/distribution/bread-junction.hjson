@@ -1,0 +1,8 @@
+type: Junction
+health: 75
+speed: 12
+capacity: 8
+category: distribution
+requirements: [
+  bread/6
+] 

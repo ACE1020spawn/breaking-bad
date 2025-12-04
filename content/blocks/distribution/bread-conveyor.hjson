@@ -1,0 +1,11 @@
+type: Conveyor
+hasShadow: true
+health: 75
+speed: 0.05
+displayedSpeed: 7
+junctionReplacement: bread-junction
+bridgeReplacement: bread-bridge
+requirements: [
+  bread/1
+]
+category: distribution

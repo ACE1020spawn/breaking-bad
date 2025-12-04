@@ -1,0 +1,7 @@
+type: Router 
+health: 75
+itemCapacity: 5
+category: distribution
+requirements: [
+  yttrium/4
+] 
