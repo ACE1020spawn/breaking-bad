@@ -16,17 +16,16 @@ itemCapacity: 20
 
 
 outputLiquids: [
-    nitrogen/0.4
-]
-outputItems: [
-    graphite/6
+    liquid-baked-bread/0.4
 ]
 
 
 consumes: {
 	liquids: [
-        slag/0.4
-        oil/0.25
+        liquid-baking-bread/0.4
+    ]
+	items: [
+	wall-bread/3
     ]
   power: 4
 }
@@ -58,14 +57,14 @@ drawer: {
 	} 
 	{
 	  type: DrawLiquidRegion
-	  drawLiquid: oil
+	  drawLiquid: liquid-baking-bread
 	  suffix: -liquid1
 	  padding: 3
 	  alpha: 1
   } 
 	{
 	  type: DrawLiquidRegion
-	  drawLiquid: slag
+	  drawLiquid: liquid-baked-bread
 	  suffix: -liquid2
 	  padding: 3
 	  alpha: 0.8
