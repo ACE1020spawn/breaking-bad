@@ -29,11 +29,11 @@ outputItems: [
 consumes: {
   power: 4
   liquids: [
-    water/0.2
+    liquid-baked-bread/0.2
   ]
   items: [
     dark-metal/4
-	metaglass/8
+	bread/8
   ]
 }
 craftTime: 240
