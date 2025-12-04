@@ -8,7 +8,7 @@
 	} 
     {
 		type: DrawLiquidTile
-		drawLiquid: slag
+		drawLiquid: liquid-baking-bread
 		alpha: 0.7
 		padding: 3
 	}
@@ -44,11 +44,10 @@
 	craftEffect: blastExplosion
 	consumes: {
 		items: [
-			titanium/4
-			graphite/1
+			bread/4
 		]
 		liquids: [
-			slag/0.2
+			liquid-baking-bread/0.2
 		]
 		power: 2.5
 	}
