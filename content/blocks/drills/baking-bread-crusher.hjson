@@ -1,0 +1,14 @@
+  type: WallCrafter
+  name: Bread crusher
+  description: bbbb
+  size: 2
+  category: production
+ requirements: [
+    bread/12
+  ]
+  drillTime: 240
+  output: wall-bread
+  fogRadius: 2
+  ambientSound: drill
+  ambientSoundVolume: 0.06
+  attribute: baking-bread
