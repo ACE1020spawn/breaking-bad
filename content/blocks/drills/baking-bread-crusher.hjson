@@ -3,7 +3,8 @@
   description: bbbb
   size: 2
   category: production
- requirements: [
+  research: bread-baker
+  requirements: [
     bread/12
   ]
   drillTime: 240
