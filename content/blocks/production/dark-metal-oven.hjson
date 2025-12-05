@@ -58,7 +58,7 @@
 		titanium/30
 	]
 	research: {
-		parent: bread-generator
+		parent: Steam-turbine
 		planet: Pistoria
 		requirements: [  
 			bread/40
