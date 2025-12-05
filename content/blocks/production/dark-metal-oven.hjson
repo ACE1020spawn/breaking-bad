@@ -51,20 +51,12 @@
 		]
 		power: 2.5
 	}
-	requirements: [
-		silicon/150
-		thorium/50
-		lead/30
-		titanium/30
-	]
+	requirements: [  
+		bread/40
+	]  
 	research: {
 		parent: Steam-turbine
-		planet: Pistoria
-		requirements: [  
-			bread/40
-		]  
-		objectives: [
-		]
+		planet: Pistoria 
 	}
 	category: crafting
 	outputItem: dark-metal/1
