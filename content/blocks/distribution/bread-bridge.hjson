@@ -6,6 +6,7 @@
   transportTime: 4
   hasPower: false
   category: distribution
-requirements: [
-  bread/10
-] 
+  research: bread-router
+  requirements: [
+   bread/10
+  ] 
