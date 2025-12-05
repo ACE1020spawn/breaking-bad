@@ -5,10 +5,8 @@ hasLiquids: true
 
 
 requirements: [
-  copper/400
-  lead/400
-  silicon/300
-  dark-metal/200
+  dark-metal/100
+  bread/400
 ]
 buildTime: 300
 
@@ -61,8 +59,7 @@ research: {
 	planet: serpulo
 }
 researchCost: [
-  copper/1200
-  lead/1200
-  silicon/900
-  dark-metal/600
+  bread/3000
+  dark-metal/1000
+
 ]
