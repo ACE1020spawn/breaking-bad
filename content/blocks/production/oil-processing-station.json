@@ -37,7 +37,7 @@ ambientSoundVolume: 0.08
 
 
 requirements: [
-	dark-metal/20
+	dark-metal/40
 	bread/120
 ]
 
@@ -84,7 +84,3 @@ research: {
   parent: dark-metal-oven
   planet: Pistoria
 }
-researchCost: [
-  bread/1000
-  dark-metal/200
-]
