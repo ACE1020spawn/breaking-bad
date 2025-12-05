@@ -1,0 +1,13 @@
+type: Pump
+health: 265
+size: 2
+pumpAmount: 0.2
+squareSprite: false
+category: liquid
+hasPower: true
+requirements: [
+  bread/40
+]
+research: {
+    parent: "bread-pipe"
+}

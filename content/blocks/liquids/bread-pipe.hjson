@@ -1,0 +1,17 @@
+type: Conduit
+leaks: true
+health: 15
+hasPower: false
+requirements: [
+  bread/2
+  wall-bread/1
+]
+liquidCapacity: 6
+liquidPressure: 1
+botColor: 335b31
+category: liquid
+junctionReplacement: bread-liquid-junction
+bridgeReplacement: bread-liquid-bridge
+research: {
+    parent: "core-base"
+}

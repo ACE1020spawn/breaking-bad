@@ -1,0 +1,13 @@
+type: LiquidRouter
+health: 100
+liquidCapacity: 10
+category: liquid
+placeableLiquid: true
+hasPower: false
+requirements: [
+  bread/3
+  wall-bread/2
+]
+research: {
+    parent: "bread-pipe"
+}

@@ -1,0 +1,14 @@
+type: LiquidBridge
+health: 100
+liquidCapacity: 10
+category: liquid
+hasPower: false
+range: 4
+requirements: [
+  bread/8
+  wall-bread/5
+]
+research: {
+    parent: "bread-liquid-junction"
+}
+ 
