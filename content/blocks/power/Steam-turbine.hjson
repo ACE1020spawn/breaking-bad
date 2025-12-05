@@ -1,5 +1,6 @@
 type: ThermalGenerator
 size: 3
+hasLiquids: true
 canOverdrive: true
 baseExplosiveness: 0
 research: core-base
@@ -25,7 +26,19 @@ drawer: {
       rotateSpeed: 30
       layer: 29
     }
+    {
+      type: DrawLiquidRegion
+      drawLiquid: liquid-baking-bread
+      suffix: -liquid
+      padding: 3
+      alpha: 0.5
+    }
   ]
+}
+consumes: {
+    "liquids": [
+    liquid-baking-bread/0.2
+    ]
 }
 generateEffectRange: 1
 effectChance: 0.02
