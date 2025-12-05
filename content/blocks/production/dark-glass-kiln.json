@@ -56,10 +56,6 @@ drawer: {
 
 research: {
   parent: dark-metal-oven
-	planet: serpulo
+	planet: Pistoria
 }
-researchCost: [
-  bread/3000
-  dark-metal/1000
 
-]
