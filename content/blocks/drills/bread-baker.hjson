@@ -9,7 +9,7 @@
   drawMineItem: false
   rotateSpeed: 3
   category: production
-
+  research: core-base
  requirements: [
   bread/10
 ]
