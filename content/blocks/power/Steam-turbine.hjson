@@ -4,6 +4,7 @@ hasLiquids: true
 canOverdrive: true
 baseExplosiveness: 0
 research: core-base
+researchCostMultiplier: 2
 requirements: [
   bread/300
 ]
