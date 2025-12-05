@@ -82,7 +82,7 @@ drawer: {
 
 research: {
   parent: dark-metal-oven
-  planet: Pistopia
+  planet: Pistoria
 }
 researchCost: [
   bread/1000
