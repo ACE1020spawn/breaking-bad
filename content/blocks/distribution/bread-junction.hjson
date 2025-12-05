@@ -3,6 +3,7 @@ health: 75
 speed: 12
 capacity: 8
 category: distribution
+research: bread-conveyor
 requirements: [
   bread/6
 ] 
