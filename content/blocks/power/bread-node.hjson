@@ -1,0 +1,11 @@
+type: PowerNode
+size: 1
+maxNodes: 10
+laserRange: 8
+laserColor1: d93203
+laserColor2: b02500
+category: power
+requirements: [
+  bread/6
+]
+research: Steam-turbine
