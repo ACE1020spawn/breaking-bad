@@ -2,6 +2,7 @@ type: Router
 health: 75
 itemCapacity: 5
 category: distribution
+research: bread-junction
 requirements: [
   bread/4
 ] 
