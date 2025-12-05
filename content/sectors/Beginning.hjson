@@ -1,0 +1,8 @@
+planet: Pistoria
+sector: 1
+research: {
+    parent: core-base
+}
+difficulty: 1
+alwaysUnlocked: true
+overrideLaunchDefaults: true
