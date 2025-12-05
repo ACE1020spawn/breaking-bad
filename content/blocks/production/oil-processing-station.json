@@ -37,11 +37,8 @@ ambientSoundVolume: 0.08
 
 
 requirements: [
-  silicon/650
-  titanium/370
-  plastanium/340
-  dark-glass/160
-  dark-metal/400
+	dark-metal/20
+	bread/120
 ]
 
 
@@ -84,13 +81,10 @@ drawer: {
   
 
 research: {
-  parent: coal-centrifuge
-  planet: serpulo
+  parent: dark-metal-oven
+  planet: Pistopia
 }
 researchCost: [
-  silicon/1800
-  titanium/1600
-  plastanium/200
-  dark-glass/800
-  dark-metal/1200
+  bread/1000
+  dark-metal/200
 ]
