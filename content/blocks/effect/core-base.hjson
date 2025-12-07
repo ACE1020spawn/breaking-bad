@@ -4,7 +4,7 @@
  absorbLasers: true
  itemCapacity: 6000  
 alwaysUnlocked: true
- unitType: randommod-metadon
+ unitType: randommod-molecule
  incinerateNonBuildable: false       
  isFirstTier: false
   research: {
