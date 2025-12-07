@@ -1,17 +1,7 @@
 const moleculeUnit = extend(UnitType, "molecule", {});
 moleculeUnit.constructor = () => extend(PayloadUnit, {});
-moleculeUnit.defaultController = () => extend(BuilderAI, {});
-/*
-let fierosT1deco = extend(DrawPart, {
-  draw(params) {
-	let rotate = params.rotation * Math.PI / 180
-    Draw.z(110)
-    Draw.color(unit.team.color) // fuck you
-    Fill.circle(params.x-(Math.cos(Math.PI+rotate)*-6.5), params.y-(Math.sin(Math.PI+rotate)*-6.5), 2.5+(Math.sin(Time.globalTime/15)/2));
-  }
-})
-fierosT1.parts.add(fierosT1deco)
-*/
+moleculeUnit.defaultController = () => extend(BuilderAI, {}); //credit goes to coal deficit for the js stuff btw
+
 let moleculedeco = extend(SuppressionFieldAbility, {
   display: false,
   draw(unit) {
