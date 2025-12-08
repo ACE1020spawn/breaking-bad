@@ -75,6 +75,6 @@
  	  thorium/150
 	  dark-metal/80
    ]
-  research:                    // add something
+  research: core-base
 
   category: turret 
