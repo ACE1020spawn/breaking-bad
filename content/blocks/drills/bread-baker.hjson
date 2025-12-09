@@ -5,9 +5,9 @@
   size: 2
   itemCapacity: 10
   tier: 1
-  drillTime: 2400
+  drillTime: 1000
   drawMineItem: false
-  rotateSpeed: 3
+  rotateSpeed: 4
   category: production
   research: core-base
  requirements: [

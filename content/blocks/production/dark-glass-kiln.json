@@ -3,13 +3,11 @@ hasItems: true
 hasPower: true
 hasLiquids: true
 
-
 requirements: [
   dark-metal/100
   bread/400
 ]
 buildTime: 300
-
 
 category: crafting
 craftEffect: smeltsmoke
@@ -18,11 +16,9 @@ squareSprite: false
 ambientSound: smelter
 ambientSoundVolume:  0.08
 
-
 outputItems: [
   dark-glass/3
 ]
-
 
 consumes: {
   power: 4
@@ -31,11 +27,10 @@ consumes: {
   ]
   items: [
     dark-metal/4
-	bread/8
+	  glass-shards/8
   ]
 }
 craftTime: 240
-
 
 drawer: {
   type: DrawMulti
@@ -52,7 +47,6 @@ drawer: {
     }
 	]
 }
-
 
 research: {
   parent: dark-metal-oven

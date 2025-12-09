@@ -1,0 +1,7 @@
+color: 85cad9
+hardness: 1
+alwaysUnlocked: false
+research: {
+  parent: bread
+  planet: Pistoria
+}

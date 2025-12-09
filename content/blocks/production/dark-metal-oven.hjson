@@ -47,7 +47,7 @@
 			bread/4
 		]
 		liquids: [
-			liquid-baking-bread/0.2
+			slag/0.2
 		]
 		power: 2.5
 	}
