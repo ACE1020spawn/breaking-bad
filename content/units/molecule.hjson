@@ -9,7 +9,7 @@ drag: 0.1
 accel: 0.1
 hitSize: 9
 useUnitCap: false
-mineFloor: false
+mineFloor: true
 mineWalls: true
 isEnemy: false
 mineSpeed: 4
