@@ -6,6 +6,7 @@ laserColor1: d93203
 laserColor2: b02500
 category: power
 requirements: [
-  bread/6
+  bread/4
+  wall-bread/2
 ]
 research: Steam-turbine

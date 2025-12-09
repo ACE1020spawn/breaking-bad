@@ -6,7 +6,8 @@ baseExplosiveness: 0
 research: core-base
 researchCostMultiplier: 2
 requirements: [
-  bread/300
+  bread/100
+  wall-bread/50
 ]
 drawer: {
   type: DrawMulti

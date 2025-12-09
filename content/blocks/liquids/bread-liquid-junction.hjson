@@ -4,7 +4,7 @@ category: liquid
 hasPower: false
 requirements: [
   bread/6
-  wall-bread/3
+  glass-shards/3
 ]
 research: {
     parent: "bread-pipe",

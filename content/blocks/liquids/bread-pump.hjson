@@ -5,8 +5,12 @@ pumpAmount: 0.2
 squareSprite: false
 category: liquid
 hasPower: true
+consumes: {
+  power: 0.5
+}
 requirements: [
-  bread/40
+  bread/20
+  glass-shards/20
 ]
 research: {
     parent: "bread-pipe"
