@@ -59,15 +59,12 @@ drawer: {
 }
 
 research: {
-  parent: bread-baker
+  parent: baking-bread-crusher
   planet: Pistoria
 }
 
 
 researchCost: [
-  graphite/700
-  plastanium/400
-  silicon/800
-  dark-metal/400
-  dark-glass/400
+  bread/25
+  wall-bread/75
 ]
