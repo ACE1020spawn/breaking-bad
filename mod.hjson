@@ -1,0 +1,20 @@
+displayName: breaking bad
+name: randommod
+author: jesse
+description: cooking meth with walter.
+version: something
+minGameVersion: 136 
+subtitle: walter. lsts cook walter. 
+dependencies: []
+
+
+contentOrder: [
+  #attributes
+  organicAttr,
+  #Env
+  flesh,
+  hair,
+  #blocks
+  chloroformic-synthesizer
+] 
+

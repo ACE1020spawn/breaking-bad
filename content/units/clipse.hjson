@@ -1,0 +1,341 @@
+flying: true
+lowAltitude: true
+health: 250000000
+armor: 0
+engineSize: 0
+rotateSpeed: 1.1
+speed: 0.25
+accel: 0.01
+drag: 0.005
+strafePenalty: 0.1
+singletarget: true
+bounded: false
+drawCell: false
+outlineColor: 521b0e
+drawBody: false
+
+parts: [
+    {
+        type: Regionpart
+        suffix: -6
+        moveX: .5
+        moveY: .5
+        moveRot: -9
+        growX: 0.07
+        growY: 0.3
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 225
+                }
+                {
+                    op: slope
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 140
+                }
+                {
+                    op: slope
+                }
+            ]
+        }
+    }
+    {
+        type: Regionpart
+        suffix: -5
+        moveX: -.25
+        moveY: -1.5
+        moveRot: 12
+        growX: 0.11
+        growY: 0.3
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 190
+                }
+                {
+                    op: slope
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 110
+                }
+                {
+                    op: slope
+                }
+            ]
+        }
+    }
+    {
+        type: Regionpart
+        suffix: -3
+        moveX: -2
+        moveY: -2.5
+        moveRot: 15
+        growX: 0.2
+        growY: 0.3
+        moves:{
+            gx: -0.10
+            gy: -.25
+            rot: -10
+            progress: {
+               type: time
+            ops:[
+                {
+                    op: loop
+                    time: 350
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: circleOut
+                }
+            ]   
+            }
+        }
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 300
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: pow2Out
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 140
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: circleIn
+                }
+            ]
+        }
+    }
+    {
+        type: Regionpart
+        suffix: -4
+        moveX: .25
+        moveY: .25
+        moveRot: -16
+        growX: 0.2
+        growY: 0.45
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 115
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: circleIn
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 115
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: circleOut
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+            ]
+        }
+    }
+    {
+        type: Regionpart
+        suffix: -2
+        moveX: -1
+        moveY: -1.25
+        moveRot: -8
+        growX: 0.07
+        growY: 0.14
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 300
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: pow2Out
+                }
+                {
+                    op: curve
+                    interp: circleIn
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 95
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+            ]
+        }
+    }
+    {
+        type: Regionpart
+        suffix: -1
+        moveX: 0.75
+        moveY: -1
+        moveRot: 10
+        growX: 0.1
+        growY: 0.2
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 240
+                }
+                {
+                    op: slope
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 120
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: pow2Out
+                }
+            ]
+        }
+    }
+    {
+        type: Regionpart
+        suffix: -7
+        moveX: 0
+        moveY: .25
+        moveRot: 0
+        growX: 0.45
+        growY: 0.01
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 200
+                }
+                {
+                    op: slope
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 190
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: bounceIn
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+            ]
+        }
+    }
+]
+immunities: [
+    freezing
+    melting
+    burning
+    tarred
+    sapped
+    wet
+    shocked
+    muddy
+    corroded
+    blasted
+    disarmed
+    spore-slowed
+    electrified
+]
+weapons: [
+    {
+        rotate: false
+        alwaysShooting: true
+        mirror: false
+        controllable: false
+        aiControllable: false
+        shootStatus: busy
+        shootStatusDuration: 3600
+        reload: 10800
+    }
+]

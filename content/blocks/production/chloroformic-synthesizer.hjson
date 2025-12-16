@@ -1,0 +1,66 @@
+type: AttributeCrafter 
+category: production
+size: 2
+
+hasLiquids: true
+hasItems: true
+hasPower: true
+squareSprite: false
+
+boostScale: 0.25
+attribute: organic
+maxBoost: 2
+minEfficiency: 0.01
+baseEfficiency: 0
+
+liquidCapacity: 200
+itemCapacity: 25
+
+
+outputLiquids: [
+    chloroform/0.5
+]
+
+
+consumes: {
+	liquids: [
+        nitrogen/0.15
+        liquid-baked-bread/0.25
+  ] 
+  items: [
+		bread/3
+    ]
+  power: 4
+}
+craftTime: 60
+
+##This will break in the next release!!!
+ambientSound: techLoop
+ambientSoundVolume: 0.08
+
+##Rememeber Please that this is temp costs
+requirements: [
+  copper/300
+  graphite/120
+  plastanium/100
+  dark-glass/200
+]
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+	  type: DrawDefault
+	}
+    {
+        type: DrawFade
+    }
+  ] 
+} 
+  
+## Remember to change this!!!
+research: {
+  parent: cryofluid-mixer
+  planet: serpulo
+}

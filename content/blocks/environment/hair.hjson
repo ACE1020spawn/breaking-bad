@@ -1,3 +1,6 @@
 type: Floor
 variants: 5
 speedMultiplier: 0.7
+attributes: {
+	organic: 0.75
+} 
