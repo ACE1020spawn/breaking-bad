@@ -1,0 +1,15 @@
+ color: dbdbac
+ explosiveness: 0f
+ flammability: 0f
+ hardness: 5
+ charge: 0
+ cost: 2
+ alwaysUnlocked: false
+ name: Teeth
+ description: Toothsome.
+
+##TODO PLEASE FOR THE LOVE OF GOD CHANGE THIS
+research: {
+  parent: thorium
+  planet: serpulo
+}

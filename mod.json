@@ -28,5 +28,8 @@ contentOrder: [
       plastanium-processor
     #cores
       core-difference
+    #Env
+    hair
+    skin
 ] 
 

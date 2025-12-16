@@ -1,0 +1,13 @@
+ color: ffa665
+ explosiveness: 0f
+ flammability: .1f
+ hardness: 3
+ charge: 0
+ cost: 1
+ alwaysUnlocked: false
+
+##TODO PLEASE FOR THE LOVE OF GOD CHANGE THIS
+research: {
+  parent: thorium
+  planet: serpulo
+}
