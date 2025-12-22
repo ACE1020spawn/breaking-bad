@@ -1,3 +1,5 @@
+Name: Bread Pump
+Description: Pumps liquids from the floor.
 type: Pump
 health: 265
 size: 2
@@ -6,12 +8,23 @@ squareSprite: false
 category: liquid
 hasPower: true
 consumes: {
-  power: 0.5
+  power: 1
 }
 requirements: [
   bread/20
   glass-shards/20
 ]
+
 research: {
-    parent: "bread-pipe"
+    parent: "bread-pipe",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "bread-wetland"
+        }
+    ]
+requirements: [
+    bread/750
+    glass-shards/250
+  ]
 }

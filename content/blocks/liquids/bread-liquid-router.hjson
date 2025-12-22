@@ -1,3 +1,5 @@
+Name: Bread Pipe Router
+Description: Routes liquids into multiple output pipes.
 type: LiquidRouter
 health: 100
 liquidCapacity: 10
@@ -8,6 +10,17 @@ requirements: [
   bread/3
   glass-shards/2
 ]
+
 research: {
-    parent: "bread-pipe"
+    parent: "bread-liquid-junction",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "bread-wetland"
+        }
+    ]
+requirements: [
+    bread/100
+    glass-shards/50
+  ]
 }

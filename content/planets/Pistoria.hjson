@@ -10,7 +10,7 @@
     drawOrbit: true,
     accessible: true,
     alwaysUnlocked: true,
-    defaultCore: "core-difference",
+    defaultCore: "core-base",
     sectorSeed: 69,
     startSector: 1,
     sectorSize: 1,
@@ -19,6 +19,8 @@
 	allowLaunchToNumbered: false,
     radius: 1,
     hiddenItems: [
+        "copper",
+        "lead",
         "beryllium",
         "oxide",
         "tungsten",

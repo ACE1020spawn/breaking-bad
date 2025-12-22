@@ -1,9 +1,0 @@
-requirements: [
-    copper/240
-    silicon/440
-    thorium/270
-    phase-fabric/70
-    dark-metal/120
-    dark-glass/30
-]
-buildTime: 720

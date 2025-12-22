@@ -1,5 +1,0 @@
-consumes: {
-  liquids: [
-    nitrogen/0.1
-  ]
-}

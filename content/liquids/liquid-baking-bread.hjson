@@ -1,5 +1,9 @@
 name: bread
-description: bread ready for baking
+description: Bread ready for baking.
 color: 394c2f
 gasColor: 57734e
 
+research: {
+  parent: bread
+  planet: Pistoria
+}

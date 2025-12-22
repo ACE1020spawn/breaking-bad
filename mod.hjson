@@ -11,10 +11,14 @@ dependencies: []
 contentOrder: [
   #attributes
   organicAttr,
+  brainAttr,
   #Env
   flesh,
   hair,
+  brain-floor
+  brain-floor-dense
   #blocks
   chloroformic-synthesizer
+  neuron-extractor
 ] 
 

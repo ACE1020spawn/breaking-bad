@@ -4,11 +4,11 @@
  radioactivity: 0f
  hardness: 4
  charge: 0
- cost: 4
+ cost: 2.5
  alwaysUnlocked: false
 
 
 research: {
-  parent: thorium
-  planet: serpulo
+  parent: teeth
+  planet: Pistoria
 }

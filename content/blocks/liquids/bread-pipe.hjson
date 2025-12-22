@@ -1,3 +1,5 @@
+name: Bread Pipe
+description: Moves liquids forwards.
 type: Conduit
 leaks: true
 health: 15
@@ -12,6 +14,17 @@ botColor: 4a4b53
 category: liquid
 junctionReplacement: bread-liquid-junction
 bridgeReplacement: bread-liquid-bridge
+
 research: {
-    parent: "core-base"
+    parent: "core-base",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "bread-wetland"
+        }
+    ]
+requirements: [
+    bread/100
+    glass-shards/50
+  ]
 }

@@ -24,7 +24,6 @@
     } 
     power: 20
   }                              
-  researchCostMultiplier: 0.6
   inaccuracy: 0.2
   targetAir: false
   targetGround: true
@@ -75,6 +74,6 @@
  	  thorium/150
 	  dark-metal/80
    ]
-  research: core-base
+  
 
   category: turret 

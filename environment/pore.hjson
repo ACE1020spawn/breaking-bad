@@ -1,5 +1,0 @@
-type: Floor
-autotile: true
-solid: true
-canShadow: false 
-placeableOn: false

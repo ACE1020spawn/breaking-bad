@@ -18,7 +18,6 @@
     } 
     power: 30
   }                                  
-  researchCostMultiplier: 0.9
   inaccuracy: 0.6
   targetAir: false
   targetGround: true
@@ -137,6 +136,5 @@
 
   ]
   }
-  research: mass
 
   category: turret 

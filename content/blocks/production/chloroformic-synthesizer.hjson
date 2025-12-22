@@ -1,66 +1,77 @@
-type: AttributeCrafter 
-category: production
-size: 2
-
-hasLiquids: true
-hasItems: true
-hasPower: true
-squareSprite: false
-
-boostScale: 0.25
+type: AttributeCrafter
 attribute: organic
-maxBoost: 2
-minEfficiency: 0.01
 baseEfficiency: 0
+minEfficiency: 0.25
+maxBoost: 1
 
-liquidCapacity: 200
-itemCapacity: 25
 
+displayEfficiency: true
+hasItems: true
+hasLiquids: true
+hasPower: true
+ignoreLiquidFullness: false
+size: 2
+liquidCapacity: 60
+squareSprite: true
 
-outputLiquids: [
-    chloroform/0.5
-]
+name: Chloroformic Synthesizer
+description: Makes Chloroform when placed on flesh tiles. Needs Bread, Liquid Bread and power to function.
 
 
 consumes: {
-	liquids: [
-        nitrogen/0.15
-        liquid-baked-bread/0.25
-  ] 
-  items: [
-		bread/3
+    power: 1
+    liquids: [
+        liquid-baking-bread/0.2
     ]
-  power: 4
+items: [
+bread/1
+]
 }
+
+
 craftTime: 60
 
-##This will break in the next release!!!
-ambientSound: techLoop
-ambientSoundVolume: 0.08
 
-##Rememeber Please that this is temp costs
+outputLiquids: [
+    chloroform/0.3
+] 
+
+
+category: production
+
 requirements: [
-  copper/300
-  graphite/120
-  plastanium/100
-  dark-glass/200
+    bread/150
+    teeth/30
+    glass-shards/50
+    dark-metal/10
 ]
 
 
 drawer: {
   type: DrawMulti
   drawers: [
+
     {
-	  type: DrawDefault
-	}
-    {
-        type: DrawFade
+      type: DrawDefault
     }
-  ] 
-} 
-  
-## Remember to change this!!!
+    {
+    type: drawGlowRegion
+    suffix: -top
+    }
+  ]
+}
+
 research: {
-  parent: cryofluid-mixer
-  planet: serpulo
+    parent: "dark-metal-oven",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "neural-outpost"
+        }
+    ]
+requirements: [
+    bread/500
+    teeth/150
+    glass-shards/250
+  ]
 }

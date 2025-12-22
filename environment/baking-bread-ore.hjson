@@ -1,7 +1,0 @@
-type: OreBlock
-oreDefault: true	
-oreScale: 1
-oreThreshold: 1
-variants: 3
-itemDrop: bread
-

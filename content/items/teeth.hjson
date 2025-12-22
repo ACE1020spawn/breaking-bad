@@ -1,15 +1,15 @@
  color: dbdbac
  explosiveness: 0f
  flammability: 0f
- hardness: 5
+ hardness: 2
  charge: 0
- cost: 2
+ cost: 1.5
  alwaysUnlocked: false
  name: Teeth
- description: Toothsome.
+ description: Toothsome. 
 
-##TODO PLEASE FOR THE LOVE OF GOD CHANGE THIS
+##I changed it for you, random guy who was screaming ;)
 research: {
-  parent: thorium
-  planet: serpulo
+  parent: bread
+  planet: Pistoria
 }

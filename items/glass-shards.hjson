@@ -1,9 +1,0 @@
-name: Glass Shards
-description: Semi-transparent shards of glass. Can be used in power-related buildings, and can be refined into more advanced resources.
-color: 85cad9
-hardness: 1
-alwaysUnlocked: false
-research: {
-  parent: bread
-  planet: Pistoria
-}

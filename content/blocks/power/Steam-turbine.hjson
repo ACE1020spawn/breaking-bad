@@ -1,13 +1,14 @@
-type: ThermalGenerator
+type: ConsumeGenerator
 size: 3
 hasLiquids: true
 canOverdrive: true
 baseExplosiveness: 0
-research: core-base
-researchCostMultiplier: 2
+name: Steam Turbine
+description: Uses heat from slag to turn liquid bread into steam, generating power.
 requirements: [
-  bread/100
-  wall-bread/50
+  bread/200
+  glass/100
+  dark-metal/10
 ]
 drawer: {
   type: DrawMulti
@@ -39,12 +40,30 @@ drawer: {
 consumes: {
     "liquids": [
     liquid-baking-bread/0.2
+    slag/0.1
     ]
 }
+liquidCapacity: 50
 generateEffectRange: 1
 effectChance: 0.02
-powerProduction: 0.5
+powerProduction: 3
+
 category: power
 requirements: [
   bread/100
+  glass-shards/50
 ]
+
+research: {
+    parent: "thermal-cell",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "bread-wetland"
+        }
+    ]
+requirements: [
+    bread/1500
+    glass-shards/500
+  ]
+}

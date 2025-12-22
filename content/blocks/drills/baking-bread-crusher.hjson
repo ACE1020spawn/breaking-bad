@@ -3,7 +3,7 @@
   description: bbbb
   size: 2
   category: production
-  research: bread-baker
+
   requirements: [
     bread/12
   ]

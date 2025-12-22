@@ -1,0 +1,155 @@
+## If anyone breaks this turret I will find you
+
+  type: ItemTurret
+  outlineColor: 303030
+  name: Neuron Cannon
+  description: Fires a long-range piercing shell at enemies. Causes a lot of damage to crowds of weaker targets.
+  health: 300
+  shootSound: bang
+  reload: 150
+  recoil: 2
+  range: 270
+  size: 3
+  innacuracy: 0
+  velocityRnd: 0.03
+rotateSpeed: 2
+
+  consumes: { 
+    power: 1.5
+    liquids: [
+chloroform/0.1
+]
+  }                              
+
+ammoPerShot: 5
+  inaccuracy: 0
+  targetAir: true
+  targetGround: true
+  ammoTypes: {
+    neurons: {
+    type: BasicBulletType
+    pierce: true
+    pierceUnits: true
+    pierceBuilding: true
+    pierceCap: 3
+    frontColor: b08491
+    backColor: b08491
+    hitColor: b08491
+    damage: 50
+    splashDamageRadius: 24
+    splashDamage: 30
+    splashDamagePierce: true
+    width: 12
+    height: 12
+    lifetime: 90
+    speed: 3
+    hitSize: 30
+
+    trailWidth: 2.5
+    trailLength: 16
+    trailColor: b08491
+    trailEffect: none
+    hitEffect: { 
+            type: MultiEffect 
+            effects: [ 
+    {
+            particles : 10
+            colorFrom : b08491
+            sizeFrom : 0
+            lifetime : 90
+            colorTo : 000000
+            sizeTo : 3
+            length : 20
+            type : ParticleEffect
+            cone : 360
+    },
+
+{
+type: WaveEffect
+colorFrom: b08491
+colorTo: 000000
+lifetime: 60
+sizeFrom: 0
+sizeTo: 48
+strokeFrom: 5
+strokeTo: 0
+}
+
+	]
+  }
+},
+
+}
+
+drawer:{
+ type: DrawTurret
+ parts: [
+         {
+         "type": "RegionPart",
+          "suffix": "-barrel",
+         "mirror": false,
+         outline: true
+        "progress": {
+          "type": "warmup",
+          "op": "blend",
+          "other": "heat",
+          "amount": 1
+          }
+          "outlineLayerOffset": 0.001,
+         "moveX": 0,
+         "moveY": -3,
+         moveRot: 0
+             layerOffset: 0.02
+         },
+
+         {
+         "type": "RegionPart",
+          "suffix": "-pins",
+         "mirror": true,
+         outline: true
+        "progress": {
+          "type": "warmup",
+          "op": "blend",
+          "other": "heat",
+          "amount": 1
+          }
+          "outlineLayerOffset": 0.001,
+         "moveX": -1,
+         "moveY": -1,
+         moveRot: 0
+             layerOffset: 0
+         }
+
+## Note for other modders- A region part with no suffix draws the turret itself
+         {
+         "type": "RegionPart",
+         "mirror": false,
+         outline: true
+          "outlineLayerOffset": 0.001,
+         "moveX": 0,
+         "moveY": 0,
+         moveRot: 0
+             layerOffset: 0.02
+         },
+
+         {
+         "type": "RegionPart",
+          "suffix": "-plate",
+         "mirror": true,
+         outline: true
+        "progress": {
+          "type": "warmup",
+          "op": "blend",
+          "other": "heat",
+          "amount": 0.2
+          }
+          "outlineLayerOffset": 0.001,
+         "moveX": 0,
+         "moveY": -1,
+         moveRot: 15
+             layerOffset: 0.02
+         }
+
+]
+}
+

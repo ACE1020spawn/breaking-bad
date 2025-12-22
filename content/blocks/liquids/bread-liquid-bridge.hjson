@@ -1,3 +1,5 @@
+Name: Bread Pipe Bridge
+Description: Allows pipes to travel over terrain or buildings.
 type: LiquidBridge
 health: 100
 liquidCapacity: 10
@@ -8,7 +10,17 @@ requirements: [
   bread/8
   glass-shards/5
 ]
+
 research: {
-    parent: "bread-liquid-junction"
+    parent: "bread-liquid-junction",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "bread-wetland"
+        }
+    ]
+requirements: [
+    bread/200
+    glass-shards/150
+  ]
 }
- 

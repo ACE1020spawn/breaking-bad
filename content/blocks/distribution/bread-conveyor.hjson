@@ -1,4 +1,7 @@
 type: Conveyor
+
+name: Bread Conveyor
+description: Moves items forwards slowly.
 hasShadow: true
 health: 75
 speed: 0.05
@@ -10,3 +13,16 @@ requirements: [
 ]
 category: distribution
 research: core-base
+
+research: {
+    parent: "core-base",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "beginning"
+        }
+    ]
+requirements: [
+    bread/10
+  ]
+}
