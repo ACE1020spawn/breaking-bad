@@ -1,0 +1,21 @@
+  name: Drill
+  description: Drills items from the ground at a fast pace. Needs power to function.
+details: The teeth are for eating the ground faster
+  type: Drill
+  hasLiquids: true
+  size: 3
+  itemCapacity: 20
+  tier: 3
+  drillTime: 700
+  drawMineItem: true
+  rotateSpeed: 3
+  category: production
+
+consumes: {
+power: 0.5
+}
+ requirements: [
+  bread/100
+  teeth/25
+  dark-metal/10
+]

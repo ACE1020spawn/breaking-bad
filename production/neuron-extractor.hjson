@@ -1,0 +1,117 @@
+## Oh yeah its big brain time
+
+type: AttributeCrafter
+attribute: brain
+baseEfficiency: 0
+minEfficiency: 0.5
+maxBoost: 2
+
+
+displayEfficiency: true
+hasItems: true
+hasLiquids: true
+hasPower: true
+ignoreLiquidFullness: false
+size: 2
+liquidCapacity: 60
+squareSprite: true
+
+name: Neuron Extractor
+description: Extracts neurons from brain tiles using Chloroform. Needs Bread to feed the neurons so that they become smart and usable.
+
+consumes: {
+    power: 2
+    liquids: [
+       chloroform/0.15
+    ]
+items: [
+bread/2
+]
+}
+
+
+craftTime: 60
+
+
+outputItems: [
+    neurons/1
+] 
+
+
+category: production
+
+requirements: [
+    bread/100
+    teeth/25
+    glass-shards/50
+    dark-metal/25
+]
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: chloroform
+      alpha: 0.7
+      padding: 2
+    }
+    {
+    type: DrawArcSmelt
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+
+
+craftEffect: [
+  {
+    type: RadialEffect
+    rotationOffset: 0
+    rotationSpacing: 0
+    amount: 1
+    lengthOffset: 0
+    layer: 110
+    effect: {
+      type: ParticleEffect
+      particles: 4
+      lifetime: 90
+      sizeFrom: 1.6
+      useRotation: false
+      baseRotation: 0
+      sizeTo: 0
+      colorFrom: 808080FF
+      colorTo: 808080FF
+      length: 16
+      baseLength: 0
+      cone: 360
+      interp: pow2
+      sizeInterp: pow3In
+      layer: 110
+    }
+  }
+]
+
+
+research: {
+    parent: "chloroformic-synthesizer",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "neural-outpost"
+        }
+    ]
+requirements: [
+    bread/500
+    teeth/150
+    glass-shards/250
+dark-metal/100
+  ]
+}

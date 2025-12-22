@@ -1,0 +1,8 @@
+type: Floor
+name: Liquid -----
+speedMultiplier: 0.5
+variants: 3
+liquidDrop: liquid-baking-bread
+cacheLayer: water
+albedo: 0.9
+supportsOverlay: true

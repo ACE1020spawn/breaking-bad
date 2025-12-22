@@ -1,0 +1,86 @@
+type: GenericCrafter 
+category: crafting
+size: 3
+buildTime: 360
+
+
+hasLiquids: true
+hasItems: true
+hasPower: true
+squareSprite: false
+ignoreLiquidFullness: true
+
+
+liquidCapacity: 100
+itemCapacity: 20
+
+
+outputLiquids: [
+    liquid-baked-bread/0.4
+]
+
+
+consumes: {
+	liquids: [
+        liquid-baking-bread/0.4
+    ]
+	items: [
+	wall-bread/3
+    ]
+  power: 4
+}
+craftTime: 180
+
+
+ambientSound: electricHum
+ambientSoundVolume: 0.08
+
+
+requirements: [
+	dark-metal/40
+	bread/120
+]
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+	{
+	  type: DrawRegion
+	  suffix: -bottom
+	} 	  
+  {
+		type: DrawCrucibleFlame
+	} 
+	{
+	  type: DrawLiquidRegion
+	  drawLiquid: liquid-baking-bread
+	  suffix: -liquid1
+	  padding: 3
+	  alpha: 1
+  } 
+	{
+	  type: DrawLiquidRegion
+	  drawLiquid: liquid-baked-bread
+	  suffix: -liquid2
+	  padding: 3
+	  alpha: 0.8
+  } 
+	{
+		type: DrawDefault
+	}
+	{
+		type: DrawGlowRegion
+		suffix: -glow
+		glowScale: 10
+		color: FFD37FFF
+	}
+	]
+} 
+	
+  
+
+research: {
+  parent: dark-metal-oven
+  planet: Pistoria
+}

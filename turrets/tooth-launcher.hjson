@@ -1,0 +1,141 @@
+  type: ItemTurret
+  outlineColor: 303030
+  name: Teeth Cannon
+  description: Shoots basic projectiles such at teeth at enemies. Needs a small amount of power to shoot.
+details: This turret normally shoots teeth, but it can also shoot Titanium Carbide when supplied with it. Does this imply that titanium carbide is just reinforced teeth?
+  health: 200
+  shootSound: Heavier-Shoot
+  buildCostMultiplier: 1.3
+  reload: 60
+  recoil: 1
+  range: 120
+  size: 2
+  innacuracy: 5
+  velocityRnd: 0.05
+
+  consumes: { 
+    coolant: { 
+       amount: 0.1
+    } 
+    power: 0.5
+  }                              
+  researchCostMultiplier: 0.6
+  inaccuracy: 5
+  targetAir: true
+  targetGround: true
+  ammoTypes: {
+    teeth: {
+    type: BasicBulletType
+    pierce: false
+    frontColor: c4ccc2
+    backColor: a8b2a4
+    hitColor: c4ccc2
+    damage: 40
+    splashDamageRadius: 32
+    splashDamage: 5
+    width: 6
+    height: 6
+    lifetime: 60
+    speed: 2
+    hitSize: 10
+    ammoMultiplier: 2
+    trailWidth: 1.5
+    trailLength: 12
+    trailColor: c4ccc2
+    trailEffect: none
+    hitEffect: { 
+            type: MultiEffect 
+            effects: [ 
+{
+            particles : 20
+            colorFrom : c4ccc2
+            sizeFrom : 0
+            lifetime : 20
+            colorTo : 000000
+            sizeTo : 1
+            length : 2
+            type : ParticleEffect
+            cone : 360
+          }
+	]
+  }
+},
+    dark-metal: {
+    type: BasicBulletType
+    pierce: false
+    frontColor: 57734EFF
+    backColor: 57734EFF
+    hitColor: 57734EFF
+    damage: 100
+    splashDamageRadius: 48
+    splashDamage: 20
+    width: 6
+    height: 6
+    lifetime: 65
+    speed: 2
+    hitSize: 10
+    ammoMultiplier: 4
+    trailWidth: 1.5
+    trailLength: 12
+    trailColor: 57734EFF
+    trailEffect: none
+    hitEffect: { 
+            type: MultiEffect 
+            effects: [ 
+{
+            particles : 20
+            colorFrom : 57734EFF
+            sizeFrom : 0
+            lifetime : 20
+            colorTo : 000000
+            sizeTo : 1
+            length : 2
+            type : ParticleEffect
+            cone : 360
+          }
+	]
+  }
+}
+}
+
+drawer:{
+ type: DrawTurret
+ parts: [
+         {
+         "type": "RegionPart",
+          "suffix": "-side",
+         "mirror": true,
+         outline: true
+        "progress": {
+          "type": "warmup",
+          "op": "blend",
+          "other": "heat",
+          "amount": 0
+          }
+          "outlineLayerOffset": 0.001,
+         "moveX": 1,
+         "moveY": 0,
+         moveRot: -15
+             layerOffset: 0.02
+         }
+]
+}
+  requirements: [
+    bread/50
+    teeth/20
+   ]
+  research: {
+    parent: "core-base",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "beginning"
+        }
+    ]
+requirements: [
+    bread/250
+    teeth/100
+  ]
+}
+
+  category: turret 

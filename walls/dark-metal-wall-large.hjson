@@ -1,0 +1,23 @@
+type: Wall,
+category: defense
+name: Small Titanium Carbide Wall
+description: "Very Durable wall made from Titanium Carbide.",
+health: 3500,
+size: 2
+    
+requirements: [
+  dark-metal/24
+]
+
+research: {
+    parent: "dark-metal-wall",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "bread-wetland"
+        }
+    ]
+requirements: [
+    dark-metal/200
+  ]
+}

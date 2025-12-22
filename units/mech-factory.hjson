@@ -1,0 +1,43 @@
+type: UnitFactory,
+category: units
+configurable: false
+name: Mech Factory
+description: "Creates the Celcius unit using Bread, Teeth and Neurons.",
+details: The unit needs Teeth to be able to eat Bread for fuel
+health: 400,
+size: 3
+    
+requirements: [
+  bread/24
+]
+
+plans: [
+
+{
+type: FactoryUnitPlan
+unit: celcius
+requirements: [
+bread/30
+teeth/10
+neurons/10
+]
+time: 1200
+}
+
+]
+
+research: {
+    parent: "core-base",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "neural-outpost"
+        }
+    ]
+requirements: [
+    bread/500
+    teeth/150
+    glass-shards/250
+    dark-metal/50
+  ]
+}

@@ -1,0 +1,48 @@
+type: ThermalGenerator
+size: 1
+hasLiquids: false
+canOverdrive: true
+baseExplosiveness: 0.1
+research: core-base
+researchCostMultiplier: 2
+
+name: Thermal Cell
+description: Generates a very tiny amount of power when placed on thermal tiles.
+
+requirements: [
+  bread/25
+  glass-shards/10
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type:DrawDeafault
+    },
+    {
+      type: drawGlowRegion
+      color: af1111
+      alpha: 1
+    }
+
+  ]
+}
+
+generateEffectRange: 1
+effectChance: 0.05
+powerProduction: 0.2
+category: power
+
+research: {
+    parent: "core-base",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "beginning"
+        }
+    ]
+requirements: [
+    bread/300
+    glass-shards/100
+  ]
+}

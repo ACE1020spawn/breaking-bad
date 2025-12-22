@@ -1,0 +1,24 @@
+Name: Bread Pipe Junction
+Description: Allows two pipes to cross over each other without mixing.
+type: LiquidJunction
+health: 100
+category: liquid
+hasPower: false
+requirements: [
+  bread/6
+  glass-shards/3
+]
+
+research: {
+    parent: "bread-pipe",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "bread-wetland"
+        }
+    ]
+requirements: [
+    bread/150
+    glass-shards/150
+  ]
+}

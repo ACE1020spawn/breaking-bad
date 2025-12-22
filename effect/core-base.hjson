@@ -1,0 +1,18 @@
+ type: CoreBlock
+  size: 3  
+ health: 2000
+ absorbLasers: true
+ itemCapacity: 6000  
+alwaysUnlocked: true
+ unitType: randommod-molecule
+ incinerateNonBuildable: false       
+ isFirstTier: false
+  research: {
+    root: true
+	planet: Pistoria
+    requiresUnlock: false
+  }
+requirements: [  
+     bread/1000
+    ]  
+	category: effect

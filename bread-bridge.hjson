@@ -1,0 +1,25 @@
+  type: ItemBridge
+
+  name: Bread Bridge
+  description: Moves items over walls.
+  health: 75
+  range: 4
+  transportTime: 4
+  hasPower: false
+  category: distribution
+  requirements: [
+   bread/10
+  ] 
+
+research: {
+    parent: "bread-junction",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "beginning"
+        }
+    ]
+requirements: [
+    bread/100
+  ]
+}

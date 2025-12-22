@@ -1,0 +1,55 @@
+type: GenericCrafter
+hasItems: true
+hasPower: true
+hasLiquids: true
+
+requirements: [
+  dark-metal/100
+  bread/400
+]
+buildTime: 300
+
+category: crafting
+craftEffect: smeltsmoke
+size: 3
+squareSprite: false
+ambientSound: smelter
+ambientSoundVolume:  0.08
+
+outputItems: [
+  dark-glass/3
+]
+
+consumes: {
+  power: 4
+  liquids: [
+    liquid-baked-bread/0.2
+  ]
+  items: [
+    dark-metal/4
+	  glass-shards/8
+  ]
+}
+craftTime: 240
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+	} 
+		{
+      type: DrawCrucibleFlame
+    }
+		{
+      type: DrawDefault
+    }
+	]
+}
+
+research: {
+  parent: dark-metal-oven
+	planet: Pistoria
+}
+

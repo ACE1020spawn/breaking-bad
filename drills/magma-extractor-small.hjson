@@ -1,0 +1,75 @@
+name: Magma Extractor
+description: Extracts slag from magmatic tiles. Needs a large amount of power. Works at max efficiency when overlapping at least three magmatic tiles.
+
+type: AttributeCrafter
+attribute: heat
+baseEfficiency: 0
+minEfficiency: 0.3
+maxBoost: 3
+buildTime: 240
+
+displayEfficiency: true
+hasItems: false
+hasLiquids: true
+hasPower: true
+ignoreLiquidFullness: false
+size: 3
+liquidCapacity: 100
+squareSprite: false
+
+consumes: {
+    power: 0.6
+
+}
+
+outputLiquid: slag/0.1
+
+category: production
+ambientSound: hum
+ambientSoundVolume: 0.08
+
+requirements: [
+    bread/100
+    teeth/10
+    glass-shards/50
+]
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: slag
+      alpha: 0.7
+      padding: 3
+    }
+
+    {
+      type: DrawDefault
+    }
+    {
+	  type: DrawGlowRegion
+	  suffix: -glow
+	  glowScale: 10
+	}
+  ]
+}
+
+research: {
+    parent: "bread-baker",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "bread-wetland"
+        }
+    ]
+requirements: [
+    bread/1000
+    teeth/250
+    glass-shards/250
+  ]
+}

@@ -1,0 +1,77 @@
+type: AttributeCrafter
+attribute: organic
+baseEfficiency: 0
+minEfficiency: 0.25
+maxBoost: 1
+
+
+displayEfficiency: true
+hasItems: true
+hasLiquids: true
+hasPower: true
+ignoreLiquidFullness: false
+size: 2
+liquidCapacity: 60
+squareSprite: true
+
+name: Chloroformic Synthesizer
+description: Makes Chloroform when placed on flesh tiles. Needs Bread, Liquid Bread and power to function.
+
+
+consumes: {
+    power: 1
+    liquids: [
+        liquid-baking-bread/0.2
+    ]
+items: [
+bread/1
+]
+}
+
+
+craftTime: 60
+
+
+outputLiquids: [
+    chloroform/0.3
+] 
+
+
+category: production
+
+requirements: [
+    bread/150
+    teeth/30
+    glass-shards/50
+    dark-metal/10
+]
+
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+
+    {
+      type: DrawDefault
+    }
+    {
+    type: drawGlowRegion
+    suffix: -top
+    }
+  ]
+}
+
+research: {
+    parent: "dark-metal-oven",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "neural-outpost"
+        }
+    ]
+requirements: [
+    bread/500
+    teeth/150
+    glass-shards/250
+  ]
+}

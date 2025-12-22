@@ -1,0 +1,84 @@
+name: Titanium Alloy Forge
+description: Creates Titanium Alloy using teeth, glass, slag and Liquid Bread. For more details on this process, check campaign-unlocked detais.
+details:  This factory creates Titanium Carbide via a very complicated process: it first breaks down the outer layer of Teeth using Glass Shards, and then that same glass is melted and cooled with the slag, creating a very complicated mixture. This mixture is then aten by a pair of two teeth, and after the teeth bite into the mixture the glass is fully shattered into dust, and the Slag is pure once more. The broken down parts of the Teeth are then used to break down the slag even further, consuming all matter other then the Titanium that the block is after, finally resulting in pure-ish titanium, ready to be turned into a carbide. But there is one problem- where does the carbon for the carbide actually come from? The Teeth arent actually just purely Teeth, as they have a small chunk of flesh attached to the bottom of them. This normally doesnt mean much as you can barely even see it, with it only hanging out a little bit when looked at from a weird angle, but this factory actually utilizes that bit of Flesh for processing. The flesh from the teeth is cut out by the glass as the start of the process, to make sure it isnt harmed by any of the other stuff going on. The flesh then has a tiny amount of slag gently poured onto it, to reduce it down into as pure of a form as possible, so it is just the pure biomatter with no other contamination. It then has some Liquid Bread poured over it, and then it goes for another round of slag-heating, as the Liquid Bread also contains some sort of biomatter. Eventually, with carefully applied heating, the factory ends up having a very fine burnt powder form of the Tooths gums and the Liquid Bread, ready for alloying. This carbonic powder and the pure titanium from earlier are then placed into the main reaction chamber, but they wont fuse on their own: they require a very powerful explosion to actually do anything. To achieve this the block requires electrical power, and it uses it to perform electrolisis on the Liquid Bread, suggesting that it is literally just wet bread, which releases hydrogen. This hydrogen is then collected and placed right below the titanium and carbon, with a tiny little bit of carbon seeping into it. The hyrdogen chamber has tiny pipes within it, and when there is enough titanium and carbon collected to form a carbide, molten hot slag is rapidly pumped through the pipes, right into the hydrogen. This releases a huge amount of energy, as there is also Liquid Bread mixed in, so the hydrogen explodes as the bread is reduced down into a fine mist of burning chunks and steam, all of this directed directly at the titanium and carbon. To make sure the block doesnt end up destroying itself via this very sofisticated process, it also uses the Liquid Bread as coolant, and it also has vents on the side to release any excess pressure that doesnt end up directed towards the now newly formed Titanium Carbide. 
+
+
+research: core-base
+	type: GenericCrafter
+	drawer: {
+		type: DrawMulti
+		drawers: [
+	{
+		type: DrawRegion
+		suffix: -bottom
+	} 
+    {
+		type: DrawLiquidTile
+		drawLiquid: liquid-baking-bread
+		alpha: 0.7
+		padding: 3
+	}
+	{
+		type: DrawCrucibleFlame
+		particleRad: 8
+		flameRad: 4
+		partcileSize: 1
+		rotateScl: 0.2
+		particles: 30
+		particleLife: 60
+	  }
+			{
+				type: DrawDefault
+			}
+			{
+				type: DrawRegion
+				suffix: -top
+			}
+			  {
+		type: DrawHeatInput
+		suffix: -heat
+		} 
+		]
+		}
+	size: 2
+	hasPower: true
+	hasItems: true
+	hasLiquids: true
+	itemCapacity: 30
+	craftTime: 120
+	updateEffect: none
+	craftEffect: blastExplosion
+	consumes: {
+		items: [
+			teeth/2
+            glass-shards/5
+		]
+		liquids: [
+			slag/0.2
+            liquid-baking-bread/0.1
+		]
+		power: 0.75
+	}
+	requirements: [  
+		bread/100
+        teeth/50
+        glass-shards/50
+	]  
+
+	category: crafting
+	outputItem: dark-metal/1
+
+research: {
+    parent: "magma-extractor-small",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "bread-wetland"
+        }
+    ]
+requirements: [
+    bread/500
+    teeth/150
+    glass-shards/250
+  ]
+}

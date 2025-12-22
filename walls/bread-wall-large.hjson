@@ -1,0 +1,23 @@
+type: Wall,
+category: defense
+name: Bread Wall
+description: "Wall made from bread that is stronger then the small wall.",
+health: 600,
+size: 2
+    
+requirements: [
+  bread/24
+]
+
+research: {
+    parent: "bread-wall",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "beginning"
+        }
+    ]
+requirements: [
+    bread/300
+  ]
+}
