@@ -1,0 +1,593 @@
+flying: true
+lowAltitude: true
+health: 250000000
+armor: 0
+engineSize: 0
+hitSize: 25
+rotateSpeed: 1.1
+speed: 0.25
+accel: 0.01
+drag: 0.005
+strafePenalty: 0.1
+singleTarget: true
+bounded: false
+drawCell: false
+outlineColor: 521b0e
+drawBody: false
+
+parts: [
+    {
+        type: RegionPart
+        suffix: -6
+        moveX: .5
+        moveY: .5
+        moveRot: -9
+        growX: 0.07
+        growY: 0.3
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 225
+                }
+                {
+                    op: slope
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 140
+                }
+                {
+                    op: slope
+                }
+            ]
+        }
+    }
+    {
+        type: RegionPart
+        suffix: -5
+        moveX: -.25
+        moveY: -1.5
+        moveRot: 12
+        growX: 0.11
+        growY: 0.3
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 190
+                }
+                {
+                    op: slope
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 110
+                }
+                {
+                    op: slope
+                }
+            ]
+        }
+    }
+    {
+        type: RegionPart
+        suffix: -3
+        moveX: -2
+        moveY: -2.5
+        moveRot: 15
+        growX: 0.2
+        growY: 0.3
+        moves:{
+            gx: -0.10
+            gy: -.25
+            rot: -10
+            progress: {
+               type: time
+            ops:[
+                {
+                    op: loop
+                    time: 350
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: circleOut
+                }
+            ]   
+            }
+        }
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 300
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: pow2Out
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 140
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: circleIn
+                }
+            ]
+        }
+    }
+    {
+        type: RegionPart
+        suffix: -4
+        moveX: .25
+        moveY: .25
+        moveRot: -16
+        growX: 0.2
+        growY: 0.45
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 115
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: circleIn
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 115
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: circleOut
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+            ]
+        }
+    }
+    {
+        type: RegionPart
+        suffix: -2
+        moveX: -1
+        moveY: -1.25
+        moveRot: -8
+        growX: 0.07
+        growY: 0.14
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 300
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: pow2Out
+                }
+                {
+                    op: curve
+                    interp: circleIn
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 95
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+            ]
+        }
+    }
+    {
+        type: RegionPart
+        suffix: -1
+        moveX: 0.75
+        moveY: -1
+        moveRot: 10
+        growX: 0.1
+        growY: 0.2
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 240
+                }
+                {
+                    op: slope
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 120
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: pow2Out
+                }
+            ]
+        }
+    }
+    {
+        type: RegionPart
+        suffix: -7
+        moveX: 0
+        moveY: .25
+        moveRot: 0
+        growX: 0.45
+        growY: 0.01
+        growProgress: {
+          type: time
+            ops:[
+                {
+                    op: loop
+                    time: 200
+                }
+                {
+                    op: slope
+                }
+            ]  
+        }
+        progress: {
+            type: time
+            ops:[
+                {
+                    op: loop
+                    time: 190
+                }
+                {
+                    op: slope
+                }
+                {
+                    op: curve
+                    interp: bounceIn
+                }
+                {
+                    op: curve
+                    interp: pow2In
+                }
+            ]
+        }
+    }
+]
+immunities: [
+    freezing
+    melting
+    burning
+    tarred
+    sapped
+    wet
+    shocked
+    muddy
+    corroded
+    blasted
+    disarmed
+    spore-slowed
+    electrified
+]
+weapons: [
+    {
+        rotate: false
+        alwaysShooting: true
+        mirror: false
+        controllable: false
+        aiControllable: false
+
+        ## TODO: find a way to make busy only apply when the bullet actually fires
+        ## shootStatus: busy
+        ## shootStatusDuration: 3600
+        ## Remember to set to 10800
+
+        reload: 240
+        shootSound: none
+
+        bullet: {
+            type: EmptyBulletType
+            createChance: 1
+            fragBullets: 1
+
+            despawnEffect: none
+            hitEffect: none
+            smokeEffect: none
+            shootEffect: none
+
+            fragAngle: 0
+            fragRandomSpread: 0
+            fragOffsetMin: 40
+            fragOffsetMax: 40
+            fragVelocityMin: 1
+
+            fragBullet: {
+                type: EmptyBulletType
+                fragBullets: 1
+
+                despawnEffect: none
+                hitEffect: none
+                smokeEffect: none
+                shootEffect: none
+
+                fragAngle: -90
+                fragRandomSpread: 0
+                fragOffsetMin: 55
+                fragOffsetMax: 55
+                fragVelocityMin: 1
+
+                fragBullet: {
+                    type: EmptyBulletType
+                    instantDespawn: true
+
+                    despawnEffect: {
+                        type: ParticleEffect
+                        particles: 1
+                        length: 0
+
+                        region: randommod-baggie-hold
+                        randLength: false
+                        colorFrom: ffffff00
+                        colorTo: ffffff
+
+                        sizeFrom: 0
+                        sizeTo: 25
+                        layer: 91
+
+                        rotWithParent: true
+                        baseRotation: 80
+                        spin: 0.09
+                        offset: 0
+
+                        sizeInterp: pow2In
+                        lifetime: 110
+                    }
+
+                    smokeEffect: none
+                    shootEffect: none
+
+                    fragBullets: 1
+                    fragRandomSpread: 0
+                    fragOffsetMin: 0
+                    fragOffsetMax: 0
+                    fragVelocityMin: 1
+
+                    fragBullet: {
+                        type: EmptyBulletType
+                        speed: 0
+                        lifetime: 110
+
+                        smokeEffect: none
+                        hitEffect: none
+                        shootEffect: none
+
+                        fragBullets: 1
+                        fragRandomSpread: 0
+                        fragAngle: 90
+                        fragOffsetMin: 0
+                        fragOffsetMax: 90
+                        fragVelocityMin: 90
+
+                        despawnEffect: {
+                            type: ParticleEffect
+                            particles: 1
+                            cone: 0
+                            length: 70
+
+                            region: randommod-baggie-hold
+                            randLength: false
+                            colorFrom: ffffff
+                            colorTo: ffffff
+
+                            sizeFrom: 25
+                            sizeTo: 25
+                            layer: 91
+
+                            rotWithParent: true
+                            baseRotation: 90
+                            offset: 0
+                            interp: pow2Out
+                            lifetime: 110
+                        }
+                        hitEffect: none
+                        fragBullet: {
+                            type: EmptyBulletType
+                            lifetime: 0
+                            fragBullets: 1
+                            fragOffsetMax: 0
+                            fragOffsetMin: 0
+                            fragRandomSpread: 0
+                            fragVelocityMin: 1
+                            fragBullet: {
+                                type: EmptyBulletType
+                                speed: 0
+                                fragBullets: 1
+                                fragRandomSpread: 0
+                                fragOffsetMin: 0
+                                fragOffsetMax: 0
+                                lifetime: 110
+                                fragAngle: 90
+                                fragVelocityMin: 1
+                                despawnEffect: {
+                                                type: ParticleEffect
+                                                particles: 1
+                                                cone: 0
+                                                length: 220
+
+                                                region: randommod-baggie-holdl
+                                                randLength: false
+                                                colorFrom: ffffff
+                                                colorTo: ffffff
+
+                                                sizeFrom: 25
+                                                sizeTo: 25
+                                                layer: 91
+
+                                                rotWithParent: true
+                                                baseRotation: 90
+                                                offset: 90
+                                            
+                                                interp: pow2Out
+                                                lifetime: 20
+                                            }
+                                fragBullet: {
+                                    type: MultiBulletType
+                                    bullets: [
+                                        {
+                                            type: RailBulletType
+                                            length: 200
+                                            pointEffectSpace: 10
+
+                                            collides: false
+                                            collidesAir: false
+                                            collidesGround: false
+                                            damage: 0
+                                            absorbable: false
+                                            
+                                            pointEffect: {
+                                                type: MultiEffect
+                                                effects: [
+                                                    {
+                                                        type: ParticleEffect
+                                                        particles: 10
+                                                        length: 40
+                                                        interp: pow10Out
+                                                        sizeInterp: pow10Out
+                                                        colorFrom: cdccc4
+                                                        colorTo: cdccc4
+                                                        sizeFrom: 12
+                                                        sizeTo: 0
+                                                        layer: 10.111
+                                                        lifetime: 250
+                                                    },
+                                                    {
+                                                        type: ParticleEffect
+                                                        particles: 8
+                                                        length: 38
+                                                        interp: pow10Out
+                                                        sizeInterp: pow10Out
+                                                        colorFrom: cdccc4
+                                                        colorTo: cdccc4
+                                                        sizeFrom: 10
+                                                        sizeTo: 0
+                                                        layer: 10.111
+                                                        lifetime: 240
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            type: EmptyBulletType
+                                            fragBullets: 1
+
+                                            hitEffect: none
+                                            smokeEffect: none
+                                            shootEffect: none
+
+                                            fragAngle: 0
+                                            fragRandomSpread: 0
+                                            fragOffsetMin: 200
+                                            fragOffsetMax: 200
+                                            fragVelocityMin: 1
+                                            fragBullet: {
+                                                type: EmptyBulletType
+                                                fragAngle: -90
+                                                fragOffsetMax: 0
+                                                fragOffsetMin: 0
+                                                lifetime: 0
+                                                fragRandomSpread: 0
+                                                fragVelocityMin: 1
+                                                fragBullets: 1
+                                                despawnEffect: {
+                                                    type: ParticleEffect
+                                                    randLength: false
+                                                    particles: 1
+                                                    cone: 0
+                                                    length: 0
+
+                                                    region: randommod-let-go
+                                                    colorFrom: ffffff
+                                                    colorTo: ffffff00
+
+                                                    sizeFrom: 25
+                                                    sizeTo: 0
+                                                    layer: 91
+
+                                                    rotWithParent: true
+                                                    baseRotation: 90
+                                                    offset: 180
+                                                
+                                                    interp: pow2In
+                                                    lifetime: 0
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

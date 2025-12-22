@@ -1,0 +1,14 @@
+ color: ffa665
+ explosiveness: 0f
+ flammability: .1f
+ hardness: 3
+ charge: 0
+ cost: 1
+ alwaysUnlocked: false
+
+##TODO PLEASE FOR THE LOVE OF GOD CHANGE THIS
+## Idea for flesh (from cup): make it obtainable later on, maybe by burning it off of skin floor using magma
+research: {
+  parent: thorium
+  planet: serpulo
+}

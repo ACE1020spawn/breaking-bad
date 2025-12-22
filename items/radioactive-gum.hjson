@@ -1,0 +1,16 @@
+ name: radioactive gum
+ description: dense radioactive material, a capsule is used to contain the radiation
+ color: a24793
+ explosiveness: 0f
+ flammability: 0f
+ radioactivity: 10
+ hardness: 2
+ charge: 0
+ cost: 5
+ alwaysUnlocked: false
+
+
+research: {
+  parent: thorium
+  planet: serpulo
+}

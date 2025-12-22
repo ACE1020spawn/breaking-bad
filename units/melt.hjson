@@ -1,0 +1,66 @@
+type: mech
+name: Melt
+description: Fires a burst of inaccurate bullets at enemies.
+speed: 1
+health: 300
+armor: 2
+drag: 0.12
+accel: 0.1
+outlineColor: 272830
+
+  weapons: [
+    {
+      top: false
+      x: 4.75
+      name: melt-gun
+      layerOffset: -0.001
+      recoil: 1
+      shootCone: 45
+        reload: 90
+        rotate: false
+        mirror: true
+        alternate: true
+        shoot: {
+          shots: 4
+          shotDelay: 10
+        }
+
+
+## IMPORTANT NOTE: FIX THE SOUND IF USING 154+
+
+        shootSound: bang
+
+        bullet: {
+          type: BasicBulletType
+          speed: 4
+          lifetime: 30
+          damage: 25
+          pierce: true
+          pierceCap: 3
+        inaccuracy: 10
+          width: 10
+          height: 10
+          trailEffect: disperseTrail
+          trailInterval: 6
+          trailRotation: true
+        }
+    }
+]
+abilities: {
+  add: [
+    {
+      type: MoveEffectAbility
+      display: false
+      minVelocity: 0
+      x: 0
+      y: -6
+      teamColor: true
+      effectParam: 1.4
+    }
+  ]
+}
+researchCostMultiplier: 1.5
+research: {
+  parent: celcius
+  planet: Pistoria
+}

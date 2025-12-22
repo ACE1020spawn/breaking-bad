@@ -1,0 +1,16 @@
+ color: d4b0bb
+ explosiveness: 0
+ flammability: 0.1
+ hardness: 1
+ charge: 0.5
+ cost: 1
+ alwaysUnlocked: true
+ name: Neurons
+ description: Strange cluster of organic material that appears to be capable of processing electrical signals.
+details: Hey look its the brain cells you lost by playing this mod
+
+
+research: {
+  parent: teeth
+  planet: Pistoria
+}

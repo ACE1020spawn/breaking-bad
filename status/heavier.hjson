@@ -1,0 +1,22 @@
+speedMultiplier : 0.50
+healthMultiplier : 1.25
+damage: 0
+color : 808b7d
+name : heavier
+effect : {
+ type: MultiEffect 
+            effects: [ 
+              { 
+                type: WaveEffect 
+                particles : 1
+                sides: 0 
+                sizeFrom: 20
+                sizeTo: 0
+                strokeFrom: 1 
+                strokeTo: 0 
+                lifetime: 10
+                colorFrom: b4c5af
+                colorTo: 808b7d
+              } 
+            ]
+} 

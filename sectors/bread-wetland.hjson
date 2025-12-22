@@ -1,0 +1,19 @@
+
+description: "This sector contains a lot of [accent]Wet Bread.[] The enemy is also much stronger here, so you will need to develop better refinement options to survive."
+
+sector: 14
+captureWave: 21
+
+difficulty: 0
+overrideLaunchDefaults: false
+
+    planet: "Pistoria",
+research: {
+    parent: "beginning",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "beginning"
+        }
+    ]
+}

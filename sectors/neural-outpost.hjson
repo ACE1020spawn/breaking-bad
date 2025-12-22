@@ -1,0 +1,17 @@
+
+description: "This sector has an enemy outpost, but it also contains anomalous matter seemingly capable of basic thought. "
+
+sector: 10
+
+difficulty: 0
+overrideLaunchDefaults: false
+planet: Pistoria
+research: {
+    parent: "bread-wetland"
+    objectives: [
+        {
+            type: "SectorComplete"
+            preset: "bread-wetland"
+        }
+                ]
+}

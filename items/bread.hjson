@@ -1,0 +1,15 @@
+ color: dbdbac
+ explosiveness: 0
+ flammability: 0.1
+ hardness: 1
+ charge: 0
+ cost: 1
+ alwaysUnlocked: true
+ name: Bread
+ description: Basic item on Pistoria. If only your core drone came equipped with a mouth...
+
+
+research: {
+  parent: core-base
+  planet: Pistoria
+}
