@@ -45,7 +45,7 @@ research: core-base
 	hasItems: true
 	hasLiquids: true
 	itemCapacity: 30
-	craftTime: 120
+	craftTime: 40
 	updateEffect: none
 	craftEffect: blastExplosion
 	consumes: {
