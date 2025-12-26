@@ -1,0 +1,33 @@
+speedMultiplier : 1.25
+healthMultiplier : 0.60
+reloadMultiplier : 1.25
+damage: 10
+color : b68593
+name : neuronium
+effect : {
+ type: MultiEffect 
+            effects: [ 
+          {
+            particles : 3
+            colorFrom : d4b0bb
+            sizeFrom : 0
+            lifetime : 10
+            colorTo : 000000
+            sizeTo : 5
+            length : 20
+            type : ParticleEffect
+            cone : 360
+          }
+          {
+            particles : 3
+            colorFrom : d4b0bb
+            sizeFrom : 5
+            lifetime : 10
+            colorTo : 000000
+            sizeTo : 0
+            length : 20
+            type : ParticleEffect
+            cone : 360
+          }
+        ]
+} 
