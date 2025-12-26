@@ -1,4 +1,4 @@
-## If anyone breaks this turret I will find you
+## If anyone breaks this turret I will find you // it already was broken from the start
 
   type: ItemTurret
   outlineColor: 303030
@@ -35,15 +35,17 @@ ammoPerShot: 5
     frontColor: b08491
     backColor: b08491
     hitColor: b08491
-    damage: 50
+    damage: 30
     splashDamageRadius: 24
-    splashDamage: 30
+    splashDamage: 15
     splashDamagePierce: true
     width: 12
     height: 12
     lifetime: 90
     speed: 3
     hitSize: 30
+    status: neuronium
+    statusDuration: 80
 
     trailWidth: 2.5
     trailLength: 16
