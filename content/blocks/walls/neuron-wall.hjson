@@ -4,6 +4,7 @@ name: Small Neuron Wall
 description: "Uses a small number of neutrons, which multiply and create strong walls.",
 health: 250,
 buildCostMultiplier: 20,
+variants: 4,
 size: 1
 
 requirements: [
