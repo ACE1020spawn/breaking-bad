@@ -1,0 +1,25 @@
+type: Wall,
+category: defense
+name: Large Neuron Wall
+description: "Uses a small number of neutrons, which multiply and create strong walls.",
+health: 1000,
+buildCostMultiplier: 20,
+size: 2
+    
+requirements: [
+    neurons/40
+]
+
+research: {
+    parent: "neuron-wall",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "neural-outpost"
+        }
+    ]
+requirements: [
+  dark-metal/20
+  neurons/40
+  ]
+}

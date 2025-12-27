@@ -1,0 +1,25 @@
+type: Wall,
+category: defense
+name: Small Neuron Wall
+description: "Uses a small number of neutrons, which multiply and create strong walls.",
+health: 250,
+buildCostMultiplier: 20,
+size: 1
+
+requirements: [
+    neurons/10
+]
+
+research: {
+    parent: "dark-metal-wall",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "neural-outpost"
+        }
+    ]
+requirements: [
+  dark-metal/4
+  neurons/10
+  ]
+}
