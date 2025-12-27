@@ -1,6 +1,6 @@
 type: Wall,
 category: defense
-name: Small Titanium Carbide Wall
+name: Large Titanium Carbide Wall
 description: "Very Durable wall made from Titanium Carbide.",
 health: 3500,
 size: 2
