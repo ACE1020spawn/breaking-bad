@@ -18,7 +18,6 @@ if you don't have time, then you can add days or change your order (for example,
 - MrDoes-Nobody
 - Blehhhh cat
 - ace1020spawn
-- kelin
 - Biba-bl
 - toadmoment
 - andromeda
