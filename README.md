@@ -1,4 +1,4 @@
-# Experemental-mod
+# Breaking Bad
 A Mindustry mod where players take turns adding their own piece to the mod and then passing it on to others without any communication.
 (ps. thanks to MrDoes-Nobody for finding participants)
 
